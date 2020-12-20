@@ -9,7 +9,7 @@ Rotas::get_Pagina();
 
 //valores para o template
 $smarty->assign('NOME', 'MARCIA PRATES DE OLIVEIRA');
-//$smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
+$smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
 //$smarty->assign('GET_HOME', Rotas::get_SiteHOME());
 //smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
 //$smarty->assign('PAG_CONTATO', Rotas::pag_Contato());
