@@ -201,7 +201,7 @@
       <div class="row mt-5">
         <div class="col-12 text-center copyright">
           <p>
-            Feito por <a href="http://www.marciaprates.com" target="_blank" >Márcia Prates</a>.
+            Feito por <a href="http://www.marciaprates.com" target="_blank">Márcia Prates</a>.
             </p>
 
           </div>
