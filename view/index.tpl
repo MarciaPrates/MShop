@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="{$GET_TEMA}/tema/css/aos.css">
   <link rel="stylesheet" href="{$GET_TEMA}/tema/css/style.css">
 
-  <title>M - Shop</title>
+  <title>{$TITULO_SITE}</title>
 </head>
 
 <body>
@@ -85,7 +85,7 @@
               </ul>
             </li>
             
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="{$PAG_SOBRE}">Sobre</a></li>
             <li><a href="{$PAG_CONTATO}">Contato</a></li>
           </ul>
           
@@ -142,10 +142,6 @@
             </div>
           </div>
         </div>
-      </div> <!-- /.untree_co-hero -->
-    </div>
-    <div class="item">
-      <div class="untree_co-hero" style="background-image: url('{$GET_TEMA}/images/hero_bg_6.jpg');">
       </div> <!-- /.untree_co-hero -->
     </div>
   </div>
@@ -410,47 +406,41 @@
 
     <div class="container">
       <div class="row">
+        <div class="col-lg-3">
+          <div class="widget">
+            <h2>{$TITULO_SITE}</h2> 
+          </div>
+        </div>
         <div class="col-lg-2">
           <div class="widget">
-            <h3>Help</h3> 
+            <h3>Loja</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
+              <li><a href="{$PAG_MINHACONTA}">Minha Conta</a></li>
+              <li><a href="{$PAG_CARRINHO}">Carrinho</a></li>
+              <li><a href="{$PAG_CONTATO}">Contato</a></li>
+              <li><a href="{$PAG_SOBRE}">Sobre</a></li>
               <li><a href="#">FAQ</a></li>   
             </ul>
           </div>
         </div>
         <div class="col-lg-2">
           <div class="widget">
-            <h3>About</h3>
+            <h3>Categorias</h3>
             <ul class="list-unstyled">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">FAQ</a></li>   
+              <li><a href="#">Presente</a></li>
+              <li><a href="#">Presente</a></li>
+              <li><a href="#">Presente</a></li>
+              <li><a href="#">Presente</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-5">
           <div class="widget">
-            <h3>Shop</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Store</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Student Discount</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="widget">
-            <h3>Join our list and receive exclusives</h3>
+            <h3>Receba nosso conteúdo exclusivo</h3>
             <form action="#" class="subscribe">
               <div class="d-flex">
-                <input type="email" class="form-control" placeholder="Email address">
-                <input type="submit" class="btn btn-black" value="Subscribe">
+                <input type="email" class="form-control" placeholder="Seu Email">
+                <input type="submit" class="btn btn-black" value="Assinar">
               </div>
             </form>
           </div>

@@ -56,9 +56,6 @@
                 <input type="email" class="form-control" placeholder="Seu Email">
               </div>
               <div class="col-12 mb-3">
-                <input type="text" class="form-control" placeholder="Assunto">
-              </div>
-              <div class="col-12 mb-3">
                 <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
               </div>
 

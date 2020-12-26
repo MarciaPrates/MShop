@@ -32,6 +32,10 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/minhaconta';
 	}
 
+	static function pag_Sobre(){
+		return  self::get_SiteHOME(). '/sobre';
+	}
+
 /*	static function pag_Produtos(){
 		return  self::get_SiteHOME(). '/produtos';
 	}

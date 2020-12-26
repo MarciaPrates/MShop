@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-26 17:46:39
+/* Smarty version 3.1.36, created on 2020-12-26 18:55:36
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fe768ef2e78d9_00185528',
+  'unifunc' => 'content_5fe779183581f6_51292353',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1609001189,
+      1 => 1609005316,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fe768ef2e78d9_00185528 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fe779183581f6_51292353 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -53,7 +53,8 @@ function content_5fe768ef2e78d9_00185528 (Smarty_Internal_Template $_smarty_tpl)
   <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/css/style.css">
 
-  <title>M - Shop</title>
+  <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</title>
 </head>
 
 <body>
@@ -118,7 +119,8 @@ function content_5fe768ef2e78d9_00185528 (Smarty_Internal_Template $_smarty_tpl)
               </ul>
             </li>
             
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
+">Sobre</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
 ">Contato</a></li>
           </ul>
@@ -179,11 +181,6 @@ function content_5fe768ef2e78d9_00185528 (Smarty_Internal_Template $_smarty_tpl)
             </div>
           </div>
         </div>
-      </div> <!-- /.untree_co-hero -->
-    </div>
-    <div class="item">
-      <div class="untree_co-hero" style="background-image: url('<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/hero_bg_6.jpg');">
       </div> <!-- /.untree_co-hero -->
     </div>
   </div>
@@ -460,47 +457,46 @@ function content_5fe768ef2e78d9_00185528 (Smarty_Internal_Template $_smarty_tpl)
 
     <div class="container">
       <div class="row">
+        <div class="col-lg-3">
+          <div class="widget">
+            <h2><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</h2> 
+          </div>
+        </div>
         <div class="col-lg-2">
           <div class="widget">
-            <h3>Help</h3> 
+            <h3>Loja</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
+              <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+">Minha Conta</a></li>
+              <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+">Carrinho</a></li>
+              <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">Contato</a></li>
+              <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
+">Sobre</a></li>
               <li><a href="#">FAQ</a></li>   
             </ul>
           </div>
         </div>
         <div class="col-lg-2">
           <div class="widget">
-            <h3>About</h3>
+            <h3>Categorias</h3>
             <ul class="list-unstyled">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">FAQ</a></li>   
+              <li><a href="#">Presente</a></li>
+              <li><a href="#">Presente</a></li>
+              <li><a href="#">Presente</a></li>
+              <li><a href="#">Presente</a></li>
             </ul>
           </div>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-5">
           <div class="widget">
-            <h3>Shop</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Store</a></li>
-              <li><a href="#">Gift Cards</a></li>
-              <li><a href="#">Student Discount</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="widget">
-            <h3>Join our list and receive exclusives</h3>
+            <h3>Receba nosso conteúdo exclusivo</h3>
             <form action="#" class="subscribe">
               <div class="d-flex">
-                <input type="email" class="form-control" placeholder="Email address">
-                <input type="submit" class="btn btn-black" value="Subscribe">
+                <input type="email" class="form-control" placeholder="Seu Email">
+                <input type="submit" class="btn btn-black" value="Assinar">
               </div>
             </form>
           </div>
