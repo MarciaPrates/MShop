@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-20 23:45:18
+/* Smarty version 3.1.36, created on 2020-12-26 17:46:39
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fdfd3fe039a24_24639048',
+  'unifunc' => 'content_5fe768ef2e78d9_00185528',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1608504315,
+      1 => 1609001189,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fdfd3fe039a24_24639048 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fe768ef2e78d9_00185528 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -95,7 +95,8 @@ function content_5fdfd3fe039a24_24639048 (Smarty_Internal_Template $_smarty_tpl)
           <a href="index.html" class="logo menu-absolute m-0">M - SHOP<span class="text-primary">.</span></a>
 
           <ul class="js-clone-nav pl-0 d-none d-lg-inline-block site-menu">
-            <li class="active"><a href="shop.html">Início</a></li>
+            <li class="active"><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+">Início</a></li>
             <li class="has-children">
               <a href="#">Categorias</a>
               <ul class="dropdown">
@@ -118,7 +119,8 @@ function content_5fdfd3fe039a24_24639048 (Smarty_Internal_Template $_smarty_tpl)
             </li>
             
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contatoo.html">Contato</a></li>
+            <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
+">Contato</a></li>
           </ul>
           
 
@@ -133,13 +135,15 @@ function content_5fdfd3fe039a24_24639048 (Smarty_Internal_Template $_smarty_tpl)
               </svg>
             </a>
 
-            <a href="#" class="user-profile">
+            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
+" class="user-profile">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
               </svg>
             </a>
 
-            <a href="cart.html" class="cart">
+            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+" class="cart">
               <span class="item-in-cart">2</span>
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
@@ -229,12 +233,19 @@ function content_5fdfd3fe039a24_24639048 (Smarty_Internal_Template $_smarty_tpl)
     </div>
   </div> <!-- /.untree_co-section -->
 
+            <?php 
+
+              Rotas::get_Pagina();
+
+            ?>
+
   <div class="untree_co-section">
     <div class="container">
 
       <div class="row">
         <div class="col-6 col-sm-6 col-md-6 mb-4 col-lg-4">
           <div class="product-item">
+            
             <a href="shop-single.html" class="product-img">
               <span class="custom-badge new">New</span>
               <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
