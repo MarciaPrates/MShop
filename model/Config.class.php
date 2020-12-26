@@ -19,13 +19,13 @@ Class Config{
 
 	//INFORMAÇÕES PARA PHP MAILLER
 	const EMAIL_HOST = "smtp.gmail.com";
-	const EMAIL_USER = "lojavirtualfreitas@gmail.com";
-	const EMAIL_NOME = "Contato Loja Freitas";
-	const EMAIL_SENHA = "lojadofreitas";
+	const EMAIL_USER = "janynascimento1988@gmail.com";
+	const EMAIL_NOME = "Contato Loja M-Shop";
+	const EMAIL_SENHA = "030991";
 	const EMAIL_PORTA = 587;
 	const EMAIL_SMTPAUTH = true;
 	const EMAIL_SMTPSECURE = "tls";
-	const EMAIL_COPIA = "lojavirtualfreitas@gmail.com";
+	const EMAIL_COPIA = "janynascimento1988@gmail.com";
 
 
 

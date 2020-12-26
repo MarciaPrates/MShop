@@ -47,16 +47,16 @@
           </div>
         </div>
         <div class="col-lg-7 mr-auto order-1" data-aos="fade-up" data-aos-delay="200">
-          <form action="#">
+          <form action="envio">
             <div class="row">
               <div class="col-6 mb-3">
-                <input type="text" class="form-control" placeholder="Seu Name">
+                <input type="text" class="form-control" placeholder="Seu Name" name="nome">
               </div>
               <div class="col-6 mb-3">
-                <input type="email" class="form-control" placeholder="Seu Email">
+                <input type="email" class="form-control" name="email" placeholder="Seu Email">
               </div>
               <div class="col-12 mb-3">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
+                <textarea name="mensagem" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
               </div>
 
               <div class="col-12">

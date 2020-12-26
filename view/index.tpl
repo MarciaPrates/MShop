@@ -459,6 +459,10 @@
       </div> <!-- /.container -->
     </div> <!-- /.site-footer -->
 
+    <a href="#content" class="back-to-top">Top</a>
+
+    <script src="https://unpkg.com/vue@2.2.4"></script>
+<script src="https://unpkg.com/vue-scrollto"></script>
     <script src="{$GET_TEMA}/tema/js/jquery-3.4.1.min.js"></script>
     <script src="{$GET_TEMA}/tema/js/popper.min.js"></script>
     <script src="{$GET_TEMA}/tema/js/bootstrap.min.js"></script>
@@ -469,6 +473,7 @@
     <script src="{$GET_TEMA}/tema/js/jquery.sticky.js"></script>
     <script src="{$GET_TEMA}/tema/js/aos.js"></script>
     <script src="{$GET_TEMA}/tema/js/custom.js"></script>
+
     
   </body>
 

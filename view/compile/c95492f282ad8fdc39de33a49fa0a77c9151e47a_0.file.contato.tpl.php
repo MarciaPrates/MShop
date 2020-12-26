@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-26 18:00:05
+/* Smarty version 3.1.36, created on 2020-12-26 21:20:58
   from 'C:\xampp\htdocs\MShop\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fe76c15a726a3_08741483',
+  'unifunc' => 'content_5fe79b2a807874_34775143',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c95492f282ad8fdc39de33a49fa0a77c9151e47a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\contato.tpl',
-      1 => 1609001996,
+      1 => 1609013845,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fe76c15a726a3_08741483 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fe79b2a807874_34775143 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
           <h1>Contate-nos</h1>  
-          <p class="mb-4"><a href="#">Início</a> / <strong>Cantato</strong></p>        
+          <p class="mb-4"><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+">Início</a> / <strong>Cantato</strong></p>        
         </div>
       </div>
     </div>
@@ -70,19 +71,16 @@ function content_5fe76c15a726a3_08741483 (Smarty_Internal_Template $_smarty_tpl)
           </div>
         </div>
         <div class="col-lg-7 mr-auto order-1" data-aos="fade-up" data-aos-delay="200">
-          <form action="#">
+          <form action="envio">
             <div class="row">
               <div class="col-6 mb-3">
                 <input type="text" class="form-control" placeholder="Seu Name">
               </div>
               <div class="col-6 mb-3">
-                <input type="email" class="form-control" placeholder="Seu Email">
+                <input type="email" class="form-control" name="emailcontato" placeholder="Seu Email">
               </div>
               <div class="col-12 mb-3">
-                <input type="text" class="form-control" placeholder="Assunto">
-              </div>
-              <div class="col-12 mb-3">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
+                <textarea name="mensagemcontato" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
               </div>
 
               <div class="col-12">
