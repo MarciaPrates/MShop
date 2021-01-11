@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-12-26 22:14:28
+/* Smarty version 3.1.38, created on 2021-01-11 00:13:21
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.36',
-  'unifunc' => 'content_5fe7a7b495a559_87765340',
+  'version' => '3.1.38',
+  'unifunc' => 'content_5ffb8a11a11302_75363135',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1609017201,
+      1 => 1610320040,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fe7a7b495a559_87765340 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ffb8a11a11302_75363135 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -334,7 +334,8 @@ function content_5fe7a7b495a559_87765340 (Smarty_Internal_Template $_smarty_tpl)
   <div class="container">
 
 
-    <div class="deal-hero" style="background-image: url('images/hero_bg_1.jpg')"> 
+    <div class="deal-hero" style="background-image: url('<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
+/images/hero_bg_1.jpg')"> 
       <div class="deal-contents">
         <span class="subtitle">Limited Offers 20% OFF</span>
         <h2 class="title">Week Deal</h2>

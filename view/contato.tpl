@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="col-lg-7 mr-auto order-1" data-aos="fade-up" data-aos-delay="200">
-          <form action="envio">
+          <form action="envio" method="GET">
             <div class="row">
               <div class="col-6 mb-3">
                 <input type="text" class="form-control" placeholder="Seu Name" name="nome">

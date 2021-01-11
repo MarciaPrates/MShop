@@ -49,7 +49,7 @@ Class Conexao extends Config{
 	}
 
 	function GetItens(){
-		//return $this->itens;
+		return $this->itens;
 	}
 
 

@@ -1,9 +1,11 @@
 <?php
 
 
-$to = $_GET['janynascimento1988@gmail.com'];
-$subject = 'Contato | Loja M-Shop';
-$message = 'Email de: '.$_GET['nome']. "\r\n""\r\n" .$_GET['mensagem'];
+$to      = Config::EMAIL_USER;
+$subject = 'Contato | M-Shop';
+$message = 'Email de: '.$_GET['nome']. "\r\n";
+$message = '~~~~~~~~~~~~~~~~ '. "\r\n";
+$message = 'Mensagem: '.$_GET['mensagem'];
 $dest = $_GET['email'];
 
 $headers = "From: " .$dest;

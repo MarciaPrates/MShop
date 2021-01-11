@@ -289,7 +289,7 @@
   <div class="container">
 
 
-    <div class="deal-hero" style="background-image: url('images/hero_bg_1.jpg')"> 
+    <div class="deal-hero" style="background-image: url('{$GET_TEMA}/images/hero_bg_1.jpg')"> 
       <div class="deal-contents">
         <span class="subtitle">Limited Offers 20% OFF</span>
         <h2 class="title">Week Deal</h2>
