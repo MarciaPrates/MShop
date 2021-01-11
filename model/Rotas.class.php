@@ -36,16 +36,8 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/sobre';
 	}
 
-/*	static function pag_Produtos(){
-		return  self::get_SiteHOME(). '/produtos';
-	}
-
-	static function pag_ProdutosInfo(){
-		return  self::get_SiteHOME(). '/produtos_info';
-	}
-
 	static function get_ImagePasta(){
-		return 'media/images/';
+		return 'media/imagens/';
 	}
 
 	static function get_ImageURL(){
@@ -58,6 +50,14 @@ Class Rotas{
 
 		return $imagem;
 
+	}
+
+/*	static function pag_Produtos(){
+		return  self::get_SiteHOME(). '/produtos';
+	}
+
+	static function pag_ProdutosInfo(){
+		return  self::get_SiteHOME(). '/produtos_info';
 	} */
 
 

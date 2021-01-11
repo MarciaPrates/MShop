@@ -45,7 +45,7 @@
               <div class="product-item">
                 <a href="shop-single.html" class="product-img">
                   <span class="custom-badge new">Novo</span>
-                  <img src="media/imagens/{$P.pro_img}" alt="Image" class="img-fluid">
+                  <img src="media/imagens/{$P.pro_img}" width="225" height="225" alt="Image" class="img-fluid">
                 </a>
                 <h3 class="title"><a href="#">{$P.pro_nome}</a></h3>
                 <div class="price">

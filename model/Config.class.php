@@ -3,7 +3,7 @@
 Class Config{
 
 	//INFORMÃÇÕES BÁSICAS DO SITE
-	const SITE_URL = "";
+	const SITE_URL = "http://localhost";
 	const SITE_PASTA = "MShop";
 	const SITE_NOME = "M-Shop | Loja Virtual";
 	const SITE_EMAIL_ADM = "janynascimento1988@gmail.com";

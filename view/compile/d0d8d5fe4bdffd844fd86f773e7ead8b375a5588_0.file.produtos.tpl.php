@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-11 01:10:25
+/* Smarty version 3.1.38, created on 2021-01-11 01:25:32
   from 'C:\xampp\htdocs\MShop\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_5ffb9771544102_16070133',
+  'unifunc' => 'content_5ffb9afc1b1571_51962777',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d8d5fe4bdffd844fd86f773e7ead8b375a5588' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos.tpl',
-      1 => 1610323801,
+      1 => 1610324699,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ffb9771544102_16070133 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ffb9afc1b1571_51962777 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="untree_co-section">
     <div class="container">
 
@@ -72,9 +72,9 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 
               <div class="product-item">
                 <a href="shop-single.html" class="product-img">
-                  <span class="custom-badge new">New</span>
+                  <span class="custom-badge new">Novo</span>
                   <img src="media/imagens/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
-" alt="Image" class="img-fluid">
+" width="225" height="225" alt="Image" class="img-fluid">
                 </a>
                 <h3 class="title"><a href="#"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
 </a></h3>
