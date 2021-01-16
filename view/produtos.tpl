@@ -43,11 +43,11 @@
             	
 
               <div class="product-item">
-                <a href="shop-single.html" class="product-img">
+                <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}" class="product-img">
                   <span class="custom-badge new">Novo</span>
-                  <img src="media/imagens/{$P.pro_img}" width="225" height="225" alt="Image" class="img-fluid">
+                  <img src="{$P.pro_img}" width="225" height="225" alt="Image" class="img-fluid">
                 </a>
-                <h3 class="title"><a href="#">{$P.pro_nome}</a></h3>
+                <h3 class="title"><a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">{$P.pro_nome}</a></h3>
                 <div class="price">
                   <span>R$ {$P.pro_valor}</span>
                 </div>

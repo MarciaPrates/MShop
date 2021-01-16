@@ -24,6 +24,14 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/carrinho';
 	}
 
+	static function pag_Produtos(){
+		return  self::get_SiteHOME(). '/produtos';
+	}
+
+	static function pag_ProdutosInfo(){
+		return  self::get_SiteHOME(). '/produtos_info';
+	}
+
 		static function pag_Contato(){
 		return  self::get_SiteHOME(). '/contato';
 	}
@@ -51,16 +59,6 @@ Class Rotas{
 		return $imagem;
 
 	}
-
-/*	static function pag_Produtos(){
-		return  self::get_SiteHOME(). '/produtos';
-	}
-
-	static function pag_ProdutosInfo(){
-		return  self::get_SiteHOME(). '/produtos_info';
-	} */
-
-
 
 
 

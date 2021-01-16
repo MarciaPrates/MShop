@@ -3,13 +3,12 @@
 $smarty = new Template();
 
 $produtos = new Produtos();
-$produtos->GetProdutos();
+$produtos->GetProdutosID(Rotas::$pag[1]);
 
 $smarty->assign('PRO', $produtos->GetItens());
 
-$smarty->assign('PRO_INFO', Rotas::pag_ProdutosInfo());
 
-$smarty->display('produtos.tpl');
+$smarty->display('produtos_info.tpl');
 
 
 ?>

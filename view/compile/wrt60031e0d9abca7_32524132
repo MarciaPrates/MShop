@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-16 18:28:16
+/* Smarty version 3.1.38, created on 2021-01-16 18:10:36
   from 'C:\xampp\htdocs\MShop\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_600322306b7a92_68278491',
+  'unifunc' => 'content_60031e0cd8fb74_30228507',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d8d5fe4bdffd844fd86f773e7ead8b375a5588' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos.tpl',
-      1 => 1610818084,
+      1 => 1610817007,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600322306b7a92_68278491 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60031e0cd8fb74_30228507 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="untree_co-section">
     <div class="container">
 
@@ -71,18 +71,12 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
             	
 
               <div class="product-item">
-                <a href="<?php echo $_smarty_tpl->tpl_vars['PRO_INFO']->value;?>
-/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
-/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_slug'];?>
-" class="product-img">
+                <a href="shop-single.html" class="product-img">
                   <span class="custom-badge new">Novo</span>
                   <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
 " width="225" height="225" alt="Image" class="img-fluid">
                 </a>
-                <h3 class="title"><a href="<?php echo $_smarty_tpl->tpl_vars['PRO_INFO']->value;?>
-/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
-/<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_slug'];?>
-"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
+                <h3 class="title"><a href="#"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
 </a></h3>
                 <div class="price">
                   <span>R$ <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
