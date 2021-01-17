@@ -7,7 +7,7 @@
           <div class="p-3 p-lg-5 border">
             <div class="form-group">
               <span class=""><span class="icon-play"></span></span>
-              <img src="{$P.pro_img}" alt="Image" class="img-fluid rounded">
+              <img src="{$P.pro_img_g}" alt="Image" class="img-fluid rounded">
             </a>
             </div>
             <div class="form-group row mt-5">
@@ -28,10 +28,8 @@
 
           <div class="row mb-5">
             <div class="col-md-12">
-              <h2 class="h3 mb-3 text-black">Coupon Code</h2>
-              <div class="p-3 p-lg-5 border">
-
-                <label for="c_code" class="text-black mb-3">Método de pagamento:</label>
+              <h2 class="h3 mb-3 text-black">Métodos de pagamento:</h2>
+              <div class="p-3 p-lg-3 border">
                 <div class="input-group w-75">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="{$TEMA}/images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
                 </div>
@@ -69,7 +67,7 @@
                   	<form name="carrinho" method="post" action="">
                 		<input type="hidden" name="pro_id" value="{$P.pro_id}">
                 		<input type="hidden" name="acao" value="add">
-            			<button class="btn btn-black btn-lg py-3 btn-block">Comprar</button>
+            			<button class="btn btn-success btn-lg py-3 btn-block">Comprar</button>
              		</form> 
                 </div>
 

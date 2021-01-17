@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-16 22:36:44
+/* Smarty version 3.1.38, created on 2021-01-17 02:05:35
   from 'C:\xampp\htdocs\MShop\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_60035c6c4bf647_38541332',
+  'unifunc' => 'content_60038d5fbcb0e8_94319158',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5e0e16c4c1f06f5dd2e4393231f9a2e1f9e0c33' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos_info.tpl',
-      1 => 1610833000,
+      1 => 1610845531,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60035c6c4bf647_38541332 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60038d5fbcb0e8_94319158 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -35,7 +35,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
           <div class="p-3 p-lg-5 border">
             <div class="form-group">
               <span class=""><span class="icon-play"></span></span>
-              <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+              <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
 " alt="Image" class="img-fluid rounded">
             </a>
             </div>
@@ -59,10 +59,8 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 
           <div class="row mb-5">
             <div class="col-md-12">
-              <h2 class="h3 mb-3 text-black">Coupon Code</h2>
-              <div class="p-3 p-lg-5 border">
-
-                <label for="c_code" class="text-black mb-3">Método de pagamento:</label>
+              <h2 class="h3 mb-3 text-black">Métodos de pagamento:</h2>
+              <div class="p-3 p-lg-3 border">
                 <div class="input-group w-75">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
 /images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
@@ -105,7 +103,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                 		<input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
 ">
                 		<input type="hidden" name="acao" value="add">
-            			<button class="btn btn-black btn-lg py-3 btn-block">Comprar</button>
+            			<button class="btn btn-success btn-lg py-3 btn-block">Comprar</button>
              		</form> 
                 </div>
 
