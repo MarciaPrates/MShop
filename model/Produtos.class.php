@@ -30,6 +30,18 @@ Class Produtos extends Conexao{
     $this->GetLista();
     }
 
+    function GetProdutosCateID($id){
+    //query para burcar produtos espeficos
+    $query = "SELECT * FROM {$this->prefix}produtos p 
+    INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
+
+    $query .= " AND pro_categoria = {$id}";
+
+    $this->ExecuteSQL($query);
+
+    $this->GetLista();
+    }
+
    private function GetLista(){
         $i = 1;
         while($lista = $this->ListarDados()):

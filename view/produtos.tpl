@@ -26,7 +26,7 @@
 
         <div class="col-md-3">
           <ul class="list-unstyled categories">
-            <li><a href="#">New <span>2,919</span></a></li>
+            <li><a href="#">New <span>2,919</span> </a></li>
             <li><a href="#">Men <span>5,381</span></a></li>
             <li><a href="#">Women <span>7,119</span></a></li>
             <li><a href="#">Jewelries <span>1,012</span></a></li>
@@ -35,7 +35,15 @@
             <li><a href="#">Clothing <span>7,919</span></a></li>
           </ul>
         </div>
+
+
         <div class="col-md-9">
+
+          {if $PRO_TOTAL < 1}
+
+        <h4 class="alert alert-danger text-center">Nenhum produto encontrado!</h4>
+
+        {/if}
 
           <div class="row">
           	{foreach from=$PRO item=P}
@@ -44,7 +52,6 @@
 
               <div class="product-item">
                 <a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}" class="product-img">
-                  <span class="custom-badge new">Novo</span>
                   <img src="{$P.pro_img}" width="225" height="225" alt="Image" class="img-fluid">
                 </a>
                 <h3 class="title"><a href="{$PRO_INFO}/{$P.pro_id}/{$P.pro_slug}">{$P.pro_nome}</a></h3>
@@ -62,7 +69,7 @@
 
           <div class="row mt-5">
             <div class="col-lg-12">
-              <div class="custom-pagination">
+              <div class="custom-pagination d-flex justify-content-center">
                 <ul class="list-unstyled">
                   <li>
                     <a href="#">

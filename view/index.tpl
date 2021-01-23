@@ -28,7 +28,7 @@
 
   <div class="search-form" id="search-form">
     <form action="#">
-      <input type="search" class="form-control" placeholder="Enter keyword to search...">
+      <input type="search" class="form-control" placeholder="Pesquise o produto">
       <button class="button">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
@@ -67,24 +67,21 @@
             <li class="has-children">
               <a href="#">Categorias</a>
               <ul class="dropdown">
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Briefs</a></li>
-                <li class="has-children">
-                  <a href="#">Menu Two</a>
-                  <ul class="dropdown">
-                    <li><a href="#">T-Shirt</a></li>
-                    <li><a href="#">Underware</a></li>
-                    <li><a href="#">Clothing</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Briefs</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Menu Three</a></li>
+
+                {foreach from=$CATEGORIAS item=C}
+
+                <li><a href="{$C.cate_link}">{$C.cate_nome}</a></li>
+
+                {/foreach}
+
+                <li><a href="{$PAG_PRODUTOS}">Todos</a></li>
+
               </ul>
+
+              
+
             </li>
-            
+            <li><a href="{$PAG_PRODUTOS}">Produtos</a></li>
             <li><a href="{$PAG_SOBRE}">Sobre</a></li>
             <li><a href="{$PAG_CONTATO}">Contato</a></li>
           </ul>
@@ -427,10 +424,11 @@
           <div class="widget">
             <h3>Categorias</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Presente</a></li>
-              <li><a href="#">Presente</a></li>
-              <li><a href="#">Presente</a></li>
-              <li><a href="#">Presente</a></li>
+              {foreach from=$CATEGORIAS item=C}
+
+              <li><a href="{$C.cate_link}">{$C.cate_nome}</a></li>
+
+              {/foreach}
             </ul>
           </div>
         </div>
@@ -448,7 +446,7 @@
       </div>
 
 
-      <div class="row mt-5">
+      <div class="row mt-2">
         <div class="col-12 text-center copyright">
           <p>
             Feito por <a href="http://www.marciaprates.com" target="_blank" >Márcia Prates</a>.

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-11 00:13:21
+/* Smarty version 3.1.38, created on 2021-01-23 20:23:28
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_5ffb8a11a11302_75363135',
+  'unifunc' => 'content_600c77b00ec713_96682307',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1610320040,
+      1 => 1611429801,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ffb8a11a11302_75363135 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600c77b00ec713_96682307 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -61,7 +61,7 @@ function content_5ffb8a11a11302_75363135 (Smarty_Internal_Template $_smarty_tpl)
 
   <div class="search-form" id="search-form">
     <form action="#">
-      <input type="search" class="form-control" placeholder="Enter keyword to search...">
+      <input type="search" class="form-control" placeholder="Pesquise o produto">
       <button class="button">
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
@@ -101,24 +101,32 @@ function content_5ffb8a11a11302_75363135 (Smarty_Internal_Template $_smarty_tpl)
             <li class="has-children">
               <a href="#">Categorias</a>
               <ul class="dropdown">
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Briefs</a></li>
-                <li class="has-children">
-                  <a href="#">Menu Two</a>
-                  <ul class="dropdown">
-                    <li><a href="#">T-Shirt</a></li>
-                    <li><a href="#">Underware</a></li>
-                    <li><a href="#">Clothing</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Briefs</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Menu Three</a></li>
+
+                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'C');
+$_smarty_tpl->tpl_vars['C']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
+$_smarty_tpl->tpl_vars['C']->do_else = false;
+?>
+
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['C']->value['cate_link'];?>
+"><?php echo $_smarty_tpl->tpl_vars['C']->value['cate_nome'];?>
+</a></li>
+
+                <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
+                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
+">Todos</a></li>
+
               </ul>
+
+              
+
             </li>
-            
+            <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
+">Produtos</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SOBRE']->value;?>
 ">Sobre</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
@@ -484,10 +492,20 @@ function content_5ffb8a11a11302_75363135 (Smarty_Internal_Template $_smarty_tpl)
           <div class="widget">
             <h3>Categorias</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Presente</a></li>
-              <li><a href="#">Presente</a></li>
-              <li><a href="#">Presente</a></li>
-              <li><a href="#">Presente</a></li>
+              <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'C');
+$_smarty_tpl->tpl_vars['C']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
+$_smarty_tpl->tpl_vars['C']->do_else = false;
+?>
+
+              <li><a href="<?php echo $_smarty_tpl->tpl_vars['C']->value['cate_link'];?>
+"><?php echo $_smarty_tpl->tpl_vars['C']->value['cate_nome'];?>
+</a></li>
+
+              <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </ul>
           </div>
         </div>
@@ -505,7 +523,7 @@ function content_5ffb8a11a11302_75363135 (Smarty_Internal_Template $_smarty_tpl)
       </div>
 
 
-      <div class="row mt-5">
+      <div class="row mt-2">
         <div class="col-12 text-center copyright">
           <p>
             Feito por <a href="http://www.marciaprates.com" target="_blank" >Márcia Prates</a>.
