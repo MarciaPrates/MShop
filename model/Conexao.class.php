@@ -5,6 +5,9 @@ Class Conexao extends Config{
 
 	protected $obj, $itens=array(), $prefix;
 
+
+	public $paginacao_links, $totalpags, $limite, $inicio;
+
 	function __construct(){
 		$this->host = self::BD_HOST;
 		$this->user = self::BD_USER;
@@ -57,6 +60,21 @@ Class Conexao extends Config{
 
 	function GetItens(){
 		return $this->itens;
+	}
+
+	function PaginacaoLinks($campo, $tabela){
+		$pag = new Paginacao();
+		$pag->GetPaginacao($campo, $tabela);
+		$this->$paginacao_links = $pag->link;
+
+		$this->totalpags = $pag->totalpags;
+		$this->limite = $pag->limite;
+		$this->inicio = $pag->inicio;
+
+		if($this->totalpags > 0)
+		return "limit {$inicio}, {$limite}";
+
+
 	}
 
 

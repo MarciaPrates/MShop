@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-24 17:14:12
+/* Smarty version 3.1.38, created on 2021-01-24 20:09:31
   from 'C:\xampp\htdocs\MShop\view\sobre.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_600d9cd4c87fb1_85542029',
+  'unifunc' => 'content_600dc5eb832503_57027610',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '650064a2f55619f6a7b0e48ec066cbc1bafc1727' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\sobre.tpl',
-      1 => 1609004352,
+      1 => 1611515261,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600d9cd4c87fb1_85542029 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600dc5eb832503_57027610 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="untree_co-section">
     <div class="container">
       <div class="row justify-content-between">

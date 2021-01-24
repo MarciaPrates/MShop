@@ -7,6 +7,7 @@ Class Config{
 	const SITE_PASTA = "MShop";
 	const SITE_NOME = "M-Shop | Loja Virtual";
 	const SITE_EMAIL_ADM = "janynascimento1988@gmail.com";
+	const BD_LIMIT_POR_PAG = 3;
 
 
 	//INFORMAÇÕES DO BANCO DE DADOS
