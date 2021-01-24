@@ -60,6 +60,10 @@ Class Rotas{
 
 	}
 
+	static function get_Pasta_Controller(){
+		return self::$pasta_controller;
+	}
+
 
 
 	static function get_Pagina(){
@@ -82,9 +86,13 @@ Class Rotas{
 			}else{
 			include 'erro.php';
 		}
+		
+		}else{
+			include 'home.php';
 
 		}
 	}
+
 }
 
 ?>

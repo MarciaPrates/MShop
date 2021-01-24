@@ -10,15 +10,16 @@
               <img src="{$P.pro_img_g}" alt="Image" class="img-fluid rounded">
             </a>
             </div>
+            <hr class="linha" id="linha">
             <div class="form-group row mt-5">
+              
+              {foreach from=$IMAGES item=I}
               <div class="col-md-6">
-                <label for="c_fname" class="text-black">Mais imagens</label>
-                <img src="{$P.pro_img}" alt="Image" class="img-fluid rounded">
+
+                <img src="{$I.img_nome}" alt="Image" class="img-fluid rounded">
+                
               </div>
-              <div class="col-md-6">
-                <label for="c_lname" class="text-black">~~~~~~~~</label>
-                <img src="{$P.pro_img}" alt="Image" class="img-fluid rounded">
-              </div>
+              {/foreach}
             </div>
           </div>
         </div>
@@ -29,7 +30,7 @@
           <div class="row mb-5">
             <div class="col-md-12">
               <h2 class="h3 mb-3 text-black">Métodos de pagamento:</h2>
-              <div class="p-3 p-lg-3 border">
+              <div class="p-3 p-lg-3 border d-flex justify-content-center">
                 <div class="input-group w-75">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="{$TEMA}/images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
                 </div>

@@ -14,7 +14,7 @@ Class Config{
 		  BD_USER = "root",
 		  BD_SENHA = "",
 		  BD_BANCO = "MShop",
-		  BD_PREFIX = "";
+		  BD_PREFIX = "mp_";
 
 
 	//INFORMAÇÕES PARA PHP MAILLER

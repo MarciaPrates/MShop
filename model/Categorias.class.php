@@ -10,7 +10,7 @@ Class Categorias extends Conexao{
 
     function GetCategorias(){
     //query para burcar categorias
-    $query = "SELECT * FROM categorias";
+    $query = "SELECT * FROM {$this->prefix}categorias";
 
     $this->ExecuteSQL($query);
 

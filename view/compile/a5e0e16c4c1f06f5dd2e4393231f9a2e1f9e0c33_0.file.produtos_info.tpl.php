@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-17 02:05:35
+/* Smarty version 3.1.38, created on 2021-01-24 15:09:13
   from 'C:\xampp\htdocs\MShop\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_60038d5fbcb0e8_94319158',
+  'unifunc' => 'content_600d7f89d1f291_18844998',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5e0e16c4c1f06f5dd2e4393231f9a2e1f9e0c33' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos_info.tpl',
-      1 => 1610845531,
+      1 => 1611449436,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60038d5fbcb0e8_94319158 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600d7f89d1f291_18844998 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -39,17 +39,24 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 " alt="Image" class="img-fluid rounded">
             </a>
             </div>
+            <hr class="linha" id="linha">
             <div class="form-group row mt-5">
+              
+              <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['IMAGES']->value, 'I');
+$_smarty_tpl->tpl_vars['I']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['I']->value) {
+$_smarty_tpl->tpl_vars['I']->do_else = false;
+?>
               <div class="col-md-6">
-                <label for="c_fname" class="text-black">Mais imagens</label>
-                <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
+
+                <img src="<?php echo $_smarty_tpl->tpl_vars['I']->value['img_nome'];?>
 " alt="Image" class="img-fluid rounded">
+                
               </div>
-              <div class="col-md-6">
-                <label for="c_lname" class="text-black">~~~~~~~~</label>
-                <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
-" alt="Image" class="img-fluid rounded">
-              </div>
+              <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </div>
           </div>
         </div>
@@ -60,7 +67,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
           <div class="row mb-5">
             <div class="col-md-12">
               <h2 class="h3 mb-3 text-black">Métodos de pagamento:</h2>
-              <div class="p-3 p-lg-3 border">
+              <div class="p-3 p-lg-3 border d-flex justify-content-center">
                 <div class="input-group w-75">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
 /images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>

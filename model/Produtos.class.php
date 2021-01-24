@@ -23,9 +23,11 @@ Class Produtos extends Conexao{
     $query = "SELECT * FROM {$this->prefix}produtos p 
     INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
 
-    $query .= " AND pro_id = {$id}";
+    $query .= " AND pro_id = :id";
 
-    $this->ExecuteSQL($query);
+    $params = array(':id'=>(int)$id);
+
+    $this->ExecuteSQL($query, $params);
 
     $this->GetLista();
     }
@@ -35,9 +37,11 @@ Class Produtos extends Conexao{
     $query = "SELECT * FROM {$this->prefix}produtos p 
     INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
 
-    $query .= " AND pro_categoria = {$id}";
+    $query .= " AND pro_categoria = :id";
 
-    $this->ExecuteSQL($query);
+    $params = array(':id'=>(int)$id);
+
+    $this->ExecuteSQL($query, $params);
 
     $this->GetLista();
     }
@@ -50,7 +54,7 @@ Class Produtos extends Conexao{
 			'pro_nome'  => $lista['pro_nome'] ,  
          	'pro_desc'  => $lista['pro_desc'] ,  
          	'pro_peso'  => $lista['pro_peso'] ,  
-         	'pro_valor'   => $lista['pro_valor']  ,  
+         	'pro_valor'   => Sistema::MoedaBR($lista['pro_valor'])  ,  
          	'pro_altura' => $lista['pro_altura'] ,  
          	'pro_largura' => $lista['pro_largura'] ,  
          	'pro_comprimento' => $lista['pro_comprimento'] ,  

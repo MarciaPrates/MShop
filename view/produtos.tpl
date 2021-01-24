@@ -41,9 +41,9 @@
 
           {if $PRO_TOTAL < 1}
 
-        <h4 class="alert alert-danger text-center">Nenhum produto encontrado!</h4>
+          <h4 class="alert alert-danger text-center">Nenhum produto encontrado!</h4>
 
-        {/if}
+          {/if}
 
           <div class="row">
           	{foreach from=$PRO item=P}
@@ -66,6 +66,7 @@
             
             {/foreach}
           </div>
+
 
           <div class="row mt-5">
             <div class="col-lg-12">
@@ -101,10 +102,4 @@
         </div>
       </div>
     </div> <!-- /.untree_co-section -->
-      
-
-      
-    </body>
-
-
-</html>
+  </div>

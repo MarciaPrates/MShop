@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-23 20:39:28
+/* Smarty version 3.1.38, created on 2021-01-23 21:36:40
   from 'C:\xampp\htdocs\MShop\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_600c7b709860e2_82864266',
+  'unifunc' => 'content_600c88d8e2e800_25625856',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d8d5fe4bdffd844fd86f773e7ead8b375a5588' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos.tpl',
-      1 => 1611430765,
+      1 => 1611434197,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600c7b709860e2_82864266 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600c88d8e2e800_25625856 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="untree_co-section">
     <div class="container">
 
@@ -64,9 +64,9 @@ function content_600c7b709860e2_82864266 (Smarty_Internal_Template $_smarty_tpl)
 
           <?php if ($_smarty_tpl->tpl_vars['PRO_TOTAL']->value < 1) {?>
 
-        <h4 class="alert alert-danger text-center">Nenhum produto encontrado!</h4>
+          <h4 class="alert alert-danger text-center">Nenhum produto encontrado!</h4>
 
-        <?php }?>
+          <?php }?>
 
           <div class="row">
           	<?php
@@ -106,6 +106,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </div>
 
+
           <div class="row mt-5">
             <div class="col-lg-12">
               <div class="custom-pagination d-flex justify-content-center">
@@ -140,11 +141,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
       </div>
     </div> <!-- /.untree_co-section -->
-      
-
-      
-    </body>
-
-
-</html><?php }
+  </div><?php }
 }
