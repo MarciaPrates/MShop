@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-23 21:36:40
+/* Smarty version 3.1.38, created on 2021-01-27 00:23:44
   from 'C:\xampp\htdocs\MShop\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_600c88d8e2e800_25625856',
+  'unifunc' => 'content_6010a48042f975_98886093',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d8d5fe4bdffd844fd86f773e7ead8b375a5588' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos.tpl',
-      1 => 1611434197,
+      1 => 1611703412,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600c88d8e2e800_25625856 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6010a48042f975_98886093 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="untree_co-section">
     <div class="container">
 
@@ -111,7 +111,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="col-lg-12">
               <div class="custom-pagination d-flex justify-content-center">
                 <ul class="list-unstyled">
-                  <li>
+                  <?php echo $_smarty_tpl->tpl_vars['PAGINAS']->value;?>
+
+                  <!--<li>
+
                     <a href="#">
                       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 0 1 0 .708L3.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
@@ -131,7 +134,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z"/>
                       </svg>
                     </a>
-                  </li>
+                  </li>-->
                 </ul>
               </div>
             </div>

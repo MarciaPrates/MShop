@@ -10,10 +10,10 @@ Class Produtos extends Conexao{
     //query para burcar produtos espeficos
     $query = "SELECT * FROM {$this->prefix}produtos p 
     INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
-
-    $query .="LIMIT(1, 3)";
     
     //$query .= "ORDER BY pro_id DESC";
+
+    $query .=$this->PaginacaoLinks("pro_id", $this->prefix."produtos");
 
     $this->ExecuteSQL($query);
 
