@@ -15,9 +15,13 @@ class Paginacao extends Conexao{
 
 		$p = (int)isset($_GET['p']) ? $_GET['p'] : 1;
 
+		if ($p > $paginas) {
+			$p = $paginas;
+		}
+
 		$this->inicio = ($p * $this->limite) - $this->limite;
 
-		$tolerancia = 2;
+		$tolerancia = 4;
 		$mostrar = $p + $tolerancia;
 		if ($mostrar > $paginas) {
 			$mostrar = $paginas;

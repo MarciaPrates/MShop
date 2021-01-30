@@ -1038,7 +1038,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       color: #000000; }
 
 .custom-pagination ul li {
-  display: inline !important; }
+  display: inline !important;
+  margin-left: 4px !important; }
   .custom-pagination ul li a, .custom-pagination ul li span {
     display: inline-block;
     width: 40px;
