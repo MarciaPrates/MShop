@@ -24,6 +24,10 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/carrinho';
 	}
 
+	static function pag_CarrinhoAlterar(){
+		return  self::get_SiteHOME(). '/carrinho_alterar';
+	}
+
 	static function pag_Produtos(){
 		return  self::get_SiteHOME(). '/produtos';
 	}
@@ -62,6 +66,14 @@ Class Rotas{
 
 	static function get_Pasta_Controller(){
 		return self::$pasta_controller;
+	}
+
+
+
+	//MÉTODO PARA REDIRECIONAR
+	static function Redirecionar($tempo, $pagina){
+		$url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">'
+		echo $url;
 	}
 
 

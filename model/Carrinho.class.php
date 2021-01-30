@@ -72,6 +72,46 @@ class Carrinho {
 			$ACAO = $_POST['acao'];
 		}
 
+
+		switch ($ACAO) {
+		case 'add':
+
+			/*Se não existe a SESSÃO chamada PRO com o ID do produto,  é pq está sendo colocado um novo produto.*/
+			if (!isset($_SESSION['PRO'][$ID]['ID'])) {
+				$_SESSION['PRO'][$ID]['ID'] = $ID;
+				$_SESSION['PRO'][$ID]['NOME'] = $NOME;
+				$_SESSION['PRO'][$ID]['VALOR'] = $VALOR;
+				$_SESSION['PRO'][$ID]['VALOR_US'] = $VALOR_US;
+				$_SESSION['PRO'][$ID]['PESO'] = $PESO;
+				$_SESSION['PRO'][$ID]['QTD'] = $QTD;
+				$_SESSION['PRO'][$ID]['IMG'] = $IMG;
+				$_SESSION['PRO'][$ID]['LINK'] = $LINK;
+			} else {
+
+				/*Se já existir o produto no carrinho, apenas acrescenta +1 na Quantidade*/
+				$_SESSION['PRO'][$ID]['QTD'] += $QTD;
+			}
+
+			echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Inserido! </h4>';
+			//header("Location: ". Rotas::pag_Carrinho());
+
+			//die();
+
+			break;
+
+		case 'del':
+			$this->CarrinhoDEL($id);
+			echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Removido! </h4>';
+			break;
+
+		case 'limpar':
+			$this->CarrinhoLimpar();
+			echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produtos Removidos! </h4>';
+			break;
+
+		}
+	}
+
 }
 
 ?>

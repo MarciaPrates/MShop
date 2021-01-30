@@ -51,7 +51,7 @@
                       <div class="input-group-prepend">
                         <button class="btn btn-outline-black js-btn-minus" type="button">&minus;</button>
                       </div>
-                      <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="{$P.pro_qtd}" aria-describedby="button-addon1">
+                      <input type="text" class="form-control text-center" value="{$P.pro_qtd}" placeholder="" aria-label="" aria-describedby="button-addon1">
                       <div class="input-group-append">
                         <button class="btn btn-outline-black js-btn-plus" type="button">&plus;</button>
                       </div>

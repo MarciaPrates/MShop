@@ -65,7 +65,7 @@
                 </table>
 
                 <div class="border p-3 mb-3">
-                  	<form name="carrinho" method="post" action="">
+                  	<form name="carrinho" method="post" action="{$PAG_COMPRAR}">
                 		<input type="hidden" name="pro_id" value="{$P.pro_id}">
                 		<input type="hidden" name="acao" value="add">
             			<button class="btn btn-success btn-lg py-3 btn-block">Comprar</button>

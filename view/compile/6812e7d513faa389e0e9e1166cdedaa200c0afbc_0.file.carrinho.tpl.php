@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-30 17:19:04
+/* Smarty version 3.1.38, created on 2021-01-30 18:46:09
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_601586f8c98eb6_93270381',
+  'unifunc' => 'content_60159b613d24e1_38190261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1612023542,
+      1 => 1612028766,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_601586f8c98eb6_93270381 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60159b613d24e1_38190261 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -83,8 +83,8 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                       <div class="input-group-prepend">
                         <button class="btn btn-outline-black js-btn-minus" type="button">&minus;</button>
                       </div>
-                      <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
-" aria-describedby="button-addon1">
+                      <input type="text" class="form-control text-center" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
+" placeholder="" aria-label="" aria-describedby="button-addon1">
                       <div class="input-group-append">
                         <button class="btn btn-outline-black js-btn-plus" type="button">&plus;</button>
                       </div>
