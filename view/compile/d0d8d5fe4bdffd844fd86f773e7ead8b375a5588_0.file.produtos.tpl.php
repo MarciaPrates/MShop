@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-27 00:23:44
+/* Smarty version 3.1.38, created on 2021-01-30 01:59:27
   from 'C:\xampp\htdocs\MShop\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_6010a48042f975_98886093',
+  'unifunc' => 'content_6014af6f3394e0_63348923',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd0d8d5fe4bdffd844fd86f773e7ead8b375a5588' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos.tpl',
-      1 => 1611703412,
+      1 => 1611967297,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6010a48042f975_98886093 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6014af6f3394e0_63348923 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="untree_co-section">
     <div class="container">
 
@@ -49,7 +49,7 @@ function content_6010a48042f975_98886093 (Smarty_Internal_Template $_smarty_tpl)
 
         <div class="col-md-3">
           <ul class="list-unstyled categories">
-            <li><a href="#">New <span>2,919</span> </a></li>
+            <li><a href="#">Men <span>2,919</span> </a></li>
             <li><a href="#">Men <span>5,381</span></a></li>
             <li><a href="#">Women <span>7,119</span></a></li>
             <li><a href="#">Jewelries <span>1,012</span></a></li>

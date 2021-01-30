@@ -144,12 +144,16 @@
       </div> <!-- /.untree_co-hero -->
     </div>
   </div>
-
+    
             {php}
+            
 
               Rotas::get_Pagina();
 
+
             {/php}
+
+            
 
   
   <div class="site-footer">

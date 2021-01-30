@@ -26,7 +26,7 @@
 
         <div class="col-md-3">
           <ul class="list-unstyled categories">
-            <li><a href="#">New <span>2,919</span> </a></li>
+            <li><a href="#">Men <span>2,919</span> </a></li>
             <li><a href="#">Men <span>5,381</span></a></li>
             <li><a href="#">Women <span>7,119</span></a></li>
             <li><a href="#">Jewelries <span>1,012</span></a></li>

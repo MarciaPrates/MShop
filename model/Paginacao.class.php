@@ -17,7 +17,16 @@ class Paginacao extends Conexao{
 
 		$this->inicio = ($p * $this->limite) - $this->limite;
 
-		for($i = 1; $i <= $paginas; $i++):
+		$tolerancia = 2;
+		$mostrar = $p + $tolerancia;
+		if ($mostrar > $paginas) {
+			$mostrar = $paginas;
+		}
+
+		for($i = ($p - $tolerancia); $i <= $mostrar; $i++):
+			if ($i < 1) {
+				$i = 1;
+			}
 			array_push($this->link, $i);
 
 		endfor;

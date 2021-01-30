@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-24 20:00:48
+/* Smarty version 3.1.38, created on 2021-01-30 01:35:23
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_600dc3e03a0463_68300711',
+  'unifunc' => 'content_6014a9cb0ea9d4_72943011',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1611514622,
+      1 => 1611966873,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600dc3e03a0463_68300711 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6014a9cb0ea9d4_72943011 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -195,12 +195,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       </div> <!-- /.untree_co-hero -->
     </div>
   </div>
-
+    
             <?php 
+            
 
               Rotas::get_Pagina();
 
+
             ?>
+
+            
 
   
   <div class="site-footer">
