@@ -9,10 +9,18 @@ class Carrinho {
 		$sub = 1.00;
 		$peso = 0;
 
-		
 		foreach ($_SESSION['PRO'] as $lista) {
 			$sub = ($lista['VALOR_US'] * $lista['QTD']);
+
+			/*Atribuindo valor do subtotal, para total_valor
+			*/
 			$this->total_valor += $sub;
+
+			/*Calcular o SUBtotal do peso X quantidade para os Correios poderem dar o valor de FRETE*/
+			$peso = $lista['PESO'] * $lista['QTD'];
+
+			/*Calculando o total*/
+			$this->total_peso += $peso;
 
 			$this->itens[$i] = array(
 
@@ -25,7 +33,7 @@ class Carrinho {
 				'pro_img' => $lista['IMG'],
 				'pro_link' => $lista['LINK'],
 				'pro_subTotal' => Sistema::MoedaBR($sub),
-				'pro_subTotal_us' => $sub
+				'pro_subTotal_us' => $sub,
 
 			);
 			$i++;
@@ -37,7 +45,7 @@ class Carrinho {
 		if (count($this->itens) > 0) {
 			return $this->itens;
 		} else {
-			echo '<h4 class="alert alert-danger text-center"> Não há produtos no carrinho </h4>';
+			echo '<h4 class="alert alert-danger text-center mt-5 mb-5"> Não há produtos no carrinho </h4>';
 
 		}
 
@@ -51,6 +59,8 @@ class Carrinho {
 		return $this->total_peso;
 	}
 
+/*Assim que adicionado o ID do produto, será gerada uma lista:
+ */
 	function CarrinhoADD($id) {
 		$produtos = new Produtos();
 		$produtos->GetProdutosID($id);
@@ -62,9 +72,9 @@ class Carrinho {
 			$PESO = $pro['pro_peso'];
 			$QTD = 1;
 			$IMG = $pro['pro_img_p'];
-
 			/*$LINK serve para chamar a pagina de produtos_info,passando a ID e o Slug
 			*/
+
 			$LINK = Rotas::pag_ProdutosInfo() . '/' . $ID . '/' . $pro['pro_slug'];
 
 			/*Cuida da ação do botão de ADD produto no carrinho, via POST (Via GET seria através da URL)
@@ -72,11 +82,10 @@ class Carrinho {
 			$ACAO = $_POST['acao'];
 		}
 
-
 		switch ($ACAO) {
 		case 'add':
 
-			/*Se não existe a SESSÃO chamada PRO com o ID do produto,  é pq está sendo colocado um novo produto.*/
+			/*Se não existe a SESSÃO chamada PRO com o ID do produto,  é pq esta sendo colocado um novo produto.*/
 			if (!isset($_SESSION['PRO'][$ID]['ID'])) {
 				$_SESSION['PRO'][$ID]['ID'] = $ID;
 				$_SESSION['PRO'][$ID]['NOME'] = $NOME;
@@ -93,9 +102,6 @@ class Carrinho {
 			}
 
 			echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Inserido! </h4>';
-			//header("Location: ". Rotas::pag_Carrinho());
-
-			//die();
 
 			break;
 
@@ -110,6 +116,15 @@ class Carrinho {
 			break;
 
 		}
+	}
+
+/*unset destrói a váriavel especificada */
+	private function CarrinhoDEL($id) {
+		unset($_SESSION['PRO'][$id]);
+	}
+
+	private function CarrinhoLimpar() {
+		unset($_SESSION['PRO']);
 	}
 
 }

@@ -71,8 +71,8 @@ Class Rotas{
 
 
 	//MÉTODO PARA REDIRECIONAR
-	static function Redirecionar($tempo, $pagina){
-		$url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">'
+	static function Redirecionar($tempo, $pagina) {
+		$url = '<meta http-equiv="refresh" content="' . $tempo . '; url=' . $pagina . '">';
 		echo $url;
 	}
 

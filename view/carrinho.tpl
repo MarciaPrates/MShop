@@ -1,10 +1,3 @@
-<!doctype html>
-<html lang="pt-br">
-
-
-<body>
-  
-
   <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -51,7 +44,7 @@
                       <div class="input-group-prepend">
                         <button class="btn btn-outline-black js-btn-minus" type="button">&minus;</button>
                       </div>
-                      <input type="text" class="form-control text-center" value="{$P.pro_qtd}" placeholder="" aria-label="" aria-describedby="button-addon1">
+                      <input type="text" class="form-control text-center" value="{$P.pro_qtd}" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                       <div class="input-group-append">
                         <button class="btn btn-outline-black js-btn-plus" type="button">&plus;</button>
                       </div>
@@ -59,7 +52,14 @@
 
                   </td>
                   <td>{$P.pro_subTotal}</td>
-                  <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  
+                    <td>
+                      <form name="carrinho" method="post" action="{$PAG_CARRINHO_ALTERAR}">
+                        <button class="btn btn-black btn-sm" type="hidden" name="pro_id" value="{$P.pro_id}">X</button>
+                      </form>
+                  
+                    </td>
+                  
                 </tr>
 
                 {/foreach}
@@ -121,21 +121,3 @@
       </div>
     </div>
   </div>
-
-
-
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
-
-    
-  </body>
-
-</html>

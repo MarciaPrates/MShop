@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-30 18:46:09
+/* Smarty version 3.1.38, created on 2021-01-30 22:31:36
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_60159b613d24e1_38190261',
+  'unifunc' => 'content_6015d0385f7a87_30302471',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1612028766,
+      1 => 1612042292,
       2 => 'file',
     ),
   ),
@@ -20,15 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60159b613d24e1_38190261 (Smarty_Internal_Template $_smarty_tpl) {
-?><!doctype html>
-<html lang="pt-br">
-
-
-<body>
-  
-
-  <div class="page-heading bg-light">
+function content_6015d0385f7a87_30302471 (Smarty_Internal_Template $_smarty_tpl) {
+?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
@@ -84,7 +77,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                         <button class="btn btn-outline-black js-btn-minus" type="button">&minus;</button>
                       </div>
                       <input type="text" class="form-control text-center" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
-" placeholder="" aria-label="" aria-describedby="button-addon1">
+" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
                       <div class="input-group-append">
                         <button class="btn btn-outline-black js-btn-plus" type="button">&plus;</button>
                       </div>
@@ -93,7 +86,16 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                   </td>
                   <td><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_subTotal'];?>
 </td>
-                  <td><a href="#" class="btn btn-black btn-sm">X</a></td>
+                  
+                    <td>
+                      <form name="carrinho" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO_ALTERAR']->value;?>
+">
+                        <button class="btn btn-black btn-sm" type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
+">X</button>
+                      </form>
+                  
+                    </td>
+                  
                 </tr>
 
                 <?php
@@ -157,43 +159,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </div>
       </div>
     </div>
-  </div>
-
-
-
-    <?php echo '<script'; ?>
- src="js/jquery-3.4.1.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/popper.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/bootstrap.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/owl.carousel.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/jquery.animateNumber.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/jquery.waypoints.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/jquery.fancybox.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/jquery.sticky.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/aos.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="js/custom.js"><?php echo '</script'; ?>
->
-
-    
-  </body>
-
-</html><?php }
+  </div><?php }
 }
