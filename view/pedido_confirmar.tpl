@@ -2,8 +2,8 @@
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Carrinho</h1>  
-          <p class="mb-2"><a href="{$GET_SITE_HOME}">Início</a> / <strong>Carrinho</strong></p>        
+          <h1>Finalizando Pedido</h1>  
+          <p class="mb-2"><a href="{$GET_SITE_HOME}">Início</a> / <strong>Finalizando Pedido</strong></p>        
         </div>
       </div>
     </div>
@@ -24,7 +24,6 @@
                   <th class="product-price">Preço</th>
                   <th class="product-quantity">Quantidade</th>
                   <th class="product-total">SubTotal</th>
-                  <th class="product-remove">Remover</th>
                 </tr>
               </thead>
               <tbody>
@@ -53,12 +52,6 @@
                   </td>
                   <td>{$P.pro_subTotal}</td>
                   
-                    <td>
-                        <button class="btn btn-black btn-sm" type="hidden" name="pro_id" value="{$P.pro_id}">X</button>
-                        <input type="hidden" name="acao" value="del">
-                  
-                    </td>
-                  
                 </tr>
 
                 {/foreach}
@@ -76,7 +69,7 @@
               <button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>
             </div>
             <div class="col-md-6">
-              <button class="btn btn-outline-black btn-sm btn-block"><a href="{$PAG_PRODUTOS}">Continue Comprando</a></button>
+              <button class="btn btn-outline-black btn-sm btn-block"><a href="{$PAG_CARRINHO}">Voltar para o Carrinho</a></button>
             </div>
           </div>
           <!--<div class="row">
@@ -109,10 +102,10 @@
                 </div>
               </div>
 
-              <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_CONFIRMAR}">
+              <form name="pedido_finalizar" id="pedido_finalizar" method="post" action="{$PAG_FINALIZAR}">
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Confirmar Pedido</button>
+                    <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Finalizar Compra</button>
                   </div>
                 </div>
               </form>
