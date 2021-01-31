@@ -14,7 +14,7 @@
   <div class="untree_co-section">
     <div class="container">
       <div class="row mb-5">
-        <form class="col-md-12" method="post">
+        <form class="col-md-12" name="carrinho" method="post" action="{$PAG_CARRINHO_ALTERAR}">
           <div class="site-blocks-table">
             <table class="table table-bordered">
               <thead>
@@ -40,23 +40,21 @@
                   </td>
                   <td>{$P.pro_valor}</td>
                   <td>
-                    <div class="input-group mb-3" style="max-width: 120px;">
+                    <!--<div class="input-group mb-3" style="max-width: 120px;">
                       <div class="input-group-prepend">
                         <button class="btn btn-outline-black js-btn-minus" type="button">&minus;</button>
-                      </div>
-                      <input type="text" class="form-control text-center" value="{$P.pro_qtd}" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                      <div class="input-group-append">
+                      </div>-->
+                      <span class="text-black">{$P.pro_qtd}</span>
+                      <!--<div class="input-group-append">
                         <button class="btn btn-outline-black js-btn-plus" type="button">&plus;</button>
                       </div>
-                    </div>
+                    </div>-->
 
                   </td>
                   <td>{$P.pro_subTotal}</td>
                   
                     <td>
-                      <form name="carrinho" method="post" action="{$PAG_CARRINHO_ALTERAR}">
                         <button class="btn btn-black btn-sm" type="hidden" name="pro_id" value="{$P.pro_id}">X</button>
-                      </form>
                   
                     </td>
                   

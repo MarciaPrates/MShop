@@ -1,14 +1,16 @@
-<?php  
+
+<?php 
 
 $smarty = new Template();
 
 $produtos = new Produtos();
 
-if(isset(Rotas::$pag[1])) {
+if(isset(Rotas::$pag[1])){
 	$produtos->GetProdutosCateID(Rotas::$pag[1]);
 }else{
 	$produtos->GetProdutos();
 }
+
 
 
 
@@ -20,4 +22,5 @@ $smarty->assign('PAGINAS', $produtos->ShowPaginacao());
 $smarty->display('produtos.tpl');
 
 
-?>
+ ?>
+
