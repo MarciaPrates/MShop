@@ -35,7 +35,7 @@ class Carrinho{
 		if(count($this->itens) > 0){
 			return $this->itens;
 		}else{
-			echo '<h4 class="alert alert-danger"> Não há produtos no carrinho </h4>';
+			echo '<h4 class="alert alert-danger text-center mt-5 mb-5"> Não há produtos no carrinho </h4>';
 
 		}
 
@@ -80,18 +80,18 @@ class Carrinho{
 						 $_SESSION['PRO'][$ID]['QTD']   += $QTD;
 					}
 
-					echo '<h4 class="alert alert-success"> Produto Inserido! </h4>';
+					echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Inserido! </h4>';
 
 				break;
 
 			case 'del':
 				$this->CarrinhoDEL($id);
-				echo '<h4 class="alert alert-success"> Produto Removido! </h4>';
+				echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Removido! </h4>';
 				break;
 
 			case 'limpar':
 				$this->CarrinhoLimpar();
-				echo '<h4 class="alert alert-success"> Produtos Removidos! </h4>';
+				echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produtos Removidos! </h4>';
 				break;
 			
 			

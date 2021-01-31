@@ -14,7 +14,7 @@
   <div class="untree_co-section">
     <div class="container">
       <div class="row mb-5">
-        <form class="col-md-12" name="carrinho" method="post" action="{$PAG_CARRINHO_ALTERAR}">
+        <form class="col-md-12" name="carrinho_dell" method="post" action="{$PAG_CARRINHO_ALTERAR}">
           <div class="site-blocks-table">
             <table class="table table-bordered">
               <thead>
@@ -55,6 +55,7 @@
                   
                     <td>
                         <button class="btn btn-black btn-sm" type="hidden" name="pro_id" value="{$P.pro_id}">X</button>
+                        <input type="hidden" name="acao" value="del">
                   
                     </td>
                   

@@ -19,7 +19,7 @@ if(isset($_SESSION['PRO'])) {
 	$smarty->display('carrinho.tpl');
 
 }else{
-	echo '<h4 class="alert alert-danger"> Não possui produtos no carrinho! </h4>';
+	echo '<h4 class="alert alert-danger text-center mt-5 mb-5"> Não possui produtos no carrinho! </h4>';
 	Rotas::Redirecionar(3, Rotas::pag_Produtos());
 }
 

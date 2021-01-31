@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-31 17:26:28
+/* Smarty version 3.1.38, created on 2021-01-31 18:03:54
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_6016da349a57e4_93468720',
+  'unifunc' => 'content_6016e2fa8eb9c8_76508937',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1612110385,
+      1 => 1612112629,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6016da349a57e4_93468720 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6016e2fa8eb9c8_76508937 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -37,7 +37,7 @@ function content_6016da349a57e4_93468720 (Smarty_Internal_Template $_smarty_tpl)
   <div class="untree_co-section">
     <div class="container">
       <div class="row mb-5">
-        <form class="col-md-12" name="carrinho" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO_ALTERAR']->value;?>
+        <form class="col-md-12" name="carrinho_dell" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO_ALTERAR']->value;?>
 ">
           <div class="site-blocks-table">
             <table class="table table-bordered">
@@ -91,6 +91,7 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                     <td>
                         <button class="btn btn-black btn-sm" type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
 ">X</button>
+                        <input type="hidden" name="acao" value="del">
                   
                     </td>
                   
