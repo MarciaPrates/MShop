@@ -81,12 +81,17 @@ class Carrinho{
 					}
 
 					echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Inserido! </h4>';
+					header("Location: " .Rotas::pag_Carrinho());
+					die();
 
 				break;
 
 			case 'del':
 				$this->CarrinhoDEL($id);
 				echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Produto Removido! </h4>';
+				header("Location: " .Rotas::pag_Carrinho());
+					die();
+					
 				break;
 
 			case 'limpar':
