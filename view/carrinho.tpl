@@ -2,8 +2,7 @@
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Carrinho</h1>  
-          <p class="mb-2"><a href="{$GET_SITE_HOME}">Início</a> / <strong>Carrinho</strong></p>        
+          <h1>Carrinho</h1>      
         </div>
       </div>
     </div>
@@ -73,10 +72,10 @@
         <div class="col-md-6">
           <div class="row mb-5">
             <div class="col-md-6 mb-3 mb-md-0">
-              <button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>
+              <button class="btn btn-outline-black btn-sm btn-block"><a href="{$PAG_PRODUTOS}">Continue Comprando</a></button>
             </div>
             <div class="col-md-6">
-              <button class="btn btn-outline-black btn-sm btn-block"><a href="{$PAG_PRODUTOS}">Continue Comprando</a></button>
+              <!--<button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>-->
             </div>
           </div>
           <!--<div class="row">
@@ -96,7 +95,7 @@
           <div class="row justify-content-end">
             <div class="col-md-7">
               <div class="row">
-                <div class="col-md-12 text-right border-bottom mb-5">
+                <div class="col-md-12 text-right border-bottom mb-3">
                   <h3 class="text-black h4 text-uppercase">Total</h3>
                 </div>
               </div>

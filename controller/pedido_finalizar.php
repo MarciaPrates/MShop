@@ -13,7 +13,16 @@ if(isset($_SESSION['PRO'])) {
 	//$smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 	$smarty->assign('TEMA', Rotas::get_SiteTEMA());
 	
+	$pedido = new Pedidos();
+	$cliente = 1;
+	$cod = $_SESSION['pedido'];
+	$ref = '054451ref';
 
+
+
+	if($pedido->PedidoGravar($cliente, $cod, $ref)) {
+		$pedido->LimparSessoes();
+	}
 
 
 	$smarty->display('pedido_finalizar.tpl');

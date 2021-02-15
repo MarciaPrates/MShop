@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-01 00:56:12
+/* Smarty version 3.1.38, created on 2021-02-15 15:29:33
   from 'C:\xampp\htdocs\MShop\view\pedido_finalizar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_6017439c3709c8_22269062',
+  'unifunc' => 'content_602a854d536788_47111282',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '553bd24e4b9dfddf2788dc9ea72fae04d8a64ace' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\pedido_finalizar.tpl',
-      1 => 1612137368,
+      1 => 1613399314,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6017439c3709c8_22269062 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602a854d536788_47111282 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Finalizar Compra</h1>  
-          <p class="mb-2"><a href="<?php echo $_smarty_tpl->tpl_vars['GET_SITE_HOME']->value;?>
-">Início</a> / <strong>Finalizar Compra</strong></p>        
+          <h1>Finalizar Compra</h1>     
         </div>
       </div>
     </div>
@@ -48,7 +46,6 @@ function content_6017439c3709c8_22269062 (Smarty_Internal_Template $_smarty_tpl)
                   <th class="product-name">Produto</th>
                   <th class="product-price">Preço</th>
                   <th class="product-quantity">Quantidade</th>
-                  <th class="product-total">Total</th>
                 </tr>
               </thead>
               <tbody>
@@ -85,8 +82,6 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                     </div>-->
 
                   </td>
-                  <td><strong class="text-black">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
-</strong></td>
                   
                 </tr>
 
@@ -100,13 +95,44 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </form>
       </div>
 
+
       <div class="row">
+        <div class="col-md-6">
+          
+        </div>
+
+        <div class="col-md-6 pl-5">
+          <div class="row justify-content-end">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 text-right border-bottom mb-3">
+                  <h3 class="text-black h4 text-uppercase">Total</h3>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <span class="text-black">Total</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</strong>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row mt-4">
         <div class="col-md-12 pl-5">
           <div class="row justify-content-center">
             <div class="col-md-6">
               <div class="row">
                 <div class="col-md-12 text-center border-bottom mb-3">
-                  <h3 class="text-black h4 text-uppercase">Pagamento</h3>
+                  <h3 class="text-black h4 text-uppercase">Forma de Pagamentos:</h3>
                 </div>
               </div>
               <div class="row mb-1">

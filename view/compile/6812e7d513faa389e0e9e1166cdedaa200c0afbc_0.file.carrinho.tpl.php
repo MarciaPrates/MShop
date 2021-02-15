@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-31 23:23:53
+/* Smarty version 3.1.38, created on 2021-02-15 15:04:11
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_60172df9793897_58581722',
+  'unifunc' => 'content_602a7f5be14853_83797861',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1612131831,
+      1 => 1612219657,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60172df9793897_58581722 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602a7f5be14853_83797861 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Carrinho</h1>  
-          <p class="mb-2"><a href="<?php echo $_smarty_tpl->tpl_vars['GET_SITE_HOME']->value;?>
-">Início</a> / <strong>Carrinho</strong></p>        
+          <h1>Carrinho</h1>      
         </div>
       </div>
     </div>
@@ -112,14 +110,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <div class="col-md-6">
           <div class="row mb-5">
             <div class="col-md-6 mb-3 mb-md-0">
-              <button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>
-            </div>
-            <div class="col-md-6">
               <button class="btn btn-outline-black btn-sm btn-block"><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 ">Continue Comprando</a></button>
             </div>
+            <div class="col-md-6">
+              <!--<button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>-->
+            </div>
           </div>
-          <div class="row">
+          <!--<div class="row">
             <div class="col-md-12">
               <label class="text-black h4" for="coupon">Cupom</label>
               <p>Coloque seu cupom aqui.</p>
@@ -130,13 +128,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="col-md-4">
               <button class="btn btn-black">Aplicar cupom</button>
             </div>
-          </div>
+          </div>-->
         </div>
         <div class="col-md-6 pl-5">
           <div class="row justify-content-end">
             <div class="col-md-7">
               <div class="row">
-                <div class="col-md-12 text-right border-bottom mb-5">
+                <div class="col-md-12 text-right border-bottom mb-3">
                   <h3 class="text-black h4 text-uppercase">Total</h3>
                 </div>
               </div>
@@ -150,11 +148,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </div>
               </div>
 
-              <form name="confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
+              <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
 ">
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Finalizar Compra</button>
+                    <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Confirmar Pedido</button>
                   </div>
                 </div>
               </form>

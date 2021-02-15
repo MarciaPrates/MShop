@@ -28,6 +28,10 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/carrinho_alterar';
 	}
 
+	static function pag_Logoff(){
+		return  self::get_SiteHOME(). '/logoff';
+	}
+
 	static function pag_Produtos(){
 		return  self::get_SiteHOME(). '/produtos';
 	}

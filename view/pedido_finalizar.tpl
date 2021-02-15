@@ -2,8 +2,7 @@
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Finalizar Compra</h1>  
-          <p class="mb-2"><a href="{$GET_SITE_HOME}">Início</a> / <strong>Finalizar Compra</strong></p>        
+          <h1>Finalizar Compra</h1>     
         </div>
       </div>
     </div>
@@ -23,7 +22,6 @@
                   <th class="product-name">Produto</th>
                   <th class="product-price">Preço</th>
                   <th class="product-quantity">Quantidade</th>
-                  <th class="product-total">Total</th>
                 </tr>
               </thead>
               <tbody>
@@ -50,7 +48,6 @@
                     </div>-->
 
                   </td>
-                  <td><strong class="text-black">R$ {$TOTAL}</strong></td>
                   
                 </tr>
 
@@ -62,13 +59,43 @@
         </form>
       </div>
 
+
       <div class="row">
+        <div class="col-md-6">
+          
+        </div>
+
+        <div class="col-md-6 pl-5">
+          <div class="row justify-content-end">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 text-right border-bottom mb-3">
+                  <h3 class="text-black h4 text-uppercase">Total</h3>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <span class="text-black">Total</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">R$ {$TOTAL}</strong>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row mt-4">
         <div class="col-md-12 pl-5">
           <div class="row justify-content-center">
             <div class="col-md-6">
               <div class="row">
                 <div class="col-md-12 text-center border-bottom mb-3">
-                  <h3 class="text-black h4 text-uppercase">Pagamento</h3>
+                  <h3 class="text-black h4 text-uppercase">Forma de Pagamentos:</h3>
                 </div>
               </div>
               <div class="row mb-1">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-31 18:18:04
+/* Smarty version 3.1.38, created on 2021-02-15 16:06:03
   from 'C:\xampp\htdocs\MShop\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_6016e64cdce5a8_70560126',
+  'unifunc' => 'content_602a8ddbd1f536_26526982',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5e0e16c4c1f06f5dd2e4393231f9a2e1f9e0c33' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos_info.tpl',
-      1 => 1612112425,
+      1 => 1613401475,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6016e64cdce5a8_70560126 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602a8ddbd1f536_26526982 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -111,7 +111,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 		<input type="hidden" name="pro_id" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_id'];?>
 ">
                 		<input type="hidden" name="acao" value="add">
-            			<button class="btn btn-success btn-lg py-3 btn-block">Comprar</button>
+            			<button class="btn btn-success btn-lg py-3 btn-block">Adicionar no Carrinho</button>
              		</form> 
                 </div>
 

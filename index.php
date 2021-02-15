@@ -5,6 +5,11 @@ if (!isset($_SESSION)) {
 	
 }
 
+if (!isset($_SESSION['pedido'])) {
+	$_SESSION['pedido'] = md5(uniqid(date('YmdHis')));
+	
+}
+
 require './lib/autoload.php';
 
 
@@ -27,8 +32,11 @@ $smarty->assign('PAG_SOBRE', Rotas::pag_Sobre());
 $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 $smarty->assign('CATEGORIAS', $categorias->GetItens());
 $smarty->assign('DATA', Sistema::DataAtualBR());
+$smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
 
-
+if(Login::Logado()){
+	$smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
+}
 
 $smarty->display('index.tpl');
 
