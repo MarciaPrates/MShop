@@ -1,7 +1,5 @@
 <?php
 
-echo $_SESSION['pedido'];
-
 if(isset($_SESSION['PRO'])) {
 
 
@@ -22,7 +20,7 @@ if(isset($_SESSION['PRO'])) {
 
 }else{
 	echo '<h4 class="alert alert-danger text-center mt-5 mb-5"> Não possui produtos no carrinho! </h4>';
-	Rotas::Redirecionar(3, Rotas::pag_Produtos());
+	Rotas::Redirecionar(5, Rotas::pag_Produtos());
 }
 
 /*

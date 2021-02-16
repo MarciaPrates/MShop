@@ -1,8 +1,11 @@
 <?php
 
-if(isset($_SESSION['PRO'])) {
+if (!Login::Logado()) {
+	Login::AcessoNegado();
+	Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
+}else{
 
-
+	if(isset($_SESSION['PRO'])) {
 
 	$smarty = new Template();
 
@@ -31,6 +34,10 @@ if(isset($_SESSION['PRO'])) {
 	echo '<h4 class="alert alert-danger text-center mt-5 mb-5"> Não possui produtos no carrinho! </h4>';
 	Rotas::Redirecionar(3, Rotas::pag_Produtos());
 }
+}
+
+
+
 
 /*
 echo '<pre>';

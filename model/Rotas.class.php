@@ -28,6 +28,14 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/carrinho_alterar';
 	}
 
+	static function pag_ClientePedidos(){
+		return  self::get_SiteHOME(). '/clientes_pedidos';
+	}
+
+	static function pag_ClienteLogin(){
+		return  self::get_SiteHOME(). '/login';
+	}
+
 	static function pag_Logoff(){
 		return  self::get_SiteHOME(). '/logoff';
 	}

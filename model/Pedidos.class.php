@@ -28,7 +28,7 @@ class Pedidos extends Conexao{
 
 
      	 $this->ExecuteSQL($query, $params);
-     	 echo $query;
+     	 
      	 //gravar os itens do pedido
      	 $this->ItensGravar($cod);
      	 $retorno = TRUE;
@@ -36,10 +36,10 @@ class Pedidos extends Conexao{
 
 	}
 
-    /*function GetPedidosCliente($cliente=null){
+    function GetPedidosCliente($cliente=null){
       $query = "SELECT * FROM {$this->prefix}pedidos p INNER JOIN {$this->prefix}clientes c";
       $query .= " ON p.ped_cliente = c.cli_id";
-
+      echo $query;
       if($cliente != null){
         $cli = (int)$cliente;
         $query .= " WHERE ped_cliente = {$cli}";
@@ -50,7 +50,7 @@ class Pedidos extends Conexao{
     }
 
 
-     private function GetLista(){
+    private function GetLista(){
         
         $i = 1;
         while ($lista = $this->ListarDados()):
@@ -79,7 +79,7 @@ class Pedidos extends Conexao{
         endwhile;
         
         
-    }*/
+    }
 
 
 	function ItensGravar($codpedido){
@@ -98,7 +98,6 @@ class Pedidos extends Conexao{
                 );
 
                 $this->ExecuteSQL($query, $params);
-                echo $query;
                 
 
 		}

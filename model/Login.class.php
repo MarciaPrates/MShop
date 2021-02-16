@@ -52,9 +52,9 @@ class Login extends Conexao{
 
 	}
 
-	/*static function AcessoNegado(){
+	static function AcessoNegado(){
 		echo '<div class="alert alert-danger"><a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a> Acesso Negado, faça Login</div>';
-	}*/
+	}
 
 
 	static function Logado(){
@@ -83,8 +83,9 @@ class Login extends Conexao{
      // verifo se não esta logado 
             if(!self::Logado()):
 
-                //self::AcessoNegado();
-                Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
+                self::AcessoNegado();
+                header("Location: " .Rotas::pag_ClienteLogin());
+					die();
                               
                 // caso nao redirecione, saiu  do bloco
                 exit();
@@ -97,8 +98,8 @@ class Login extends Conexao{
         $smarty->assign('PAG_CONTA', Rotas::pag_ClienteConta());
         $smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
         $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
-        /*$smarty->assign('PAG_CLIENTE_PEDIDOS', Rotas::pag_CLientePedidos());
-        $smarty->assign('PAG_CLIENTE_DADOS', Rotas::pag_CLienteDados());
+        $smarty->assign('PAG_CLIENTE_PEDIDOS', Rotas::pag_CLientePedidos());
+        /*$smarty->assign('PAG_CLIENTE_DADOS', Rotas::pag_CLienteDados());
         $smarty->assign('PAG_CLIENTE_SENHA', Rotas::pag_CLienteSenha());*/
         $smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
         

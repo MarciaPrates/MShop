@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-16 01:10:40
+/* Smarty version 3.1.38, created on 2021-02-17 00:22:40
   from 'C:\xampp\htdocs\MShop\view\menu_cliente.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_602b0d80a57c46_92045958',
+  'unifunc' => 'content_602c53c00909d5_43491787',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '36a22c9a5eed60fa96c2e81f79eddb8f0bd0a557' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\menu_cliente.tpl',
-      1 => 1613433920,
+      1 => 1613517744,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602b0d80a57c46_92045958 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602c53c00909d5_43491787 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end d-flex justify-content-center">
@@ -45,7 +45,8 @@ function content_602b0d80a57c46_92045958 (Smarty_Internal_Template $_smarty_tpl)
                     <a href=""><button class="btn btn-info btn-lg py-3 btn-block" type="submit">Minha Conta</button></a>
                   </th>
                   <th class="product-name">
-                    <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Pedidos</button></a>
+                    <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CLIENTE_PEDIDOS']->value;?>
+"><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Pedidos</button></a>
                   </th>
                   <th class="product-price">
                     <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Meus Dados</button></a>
