@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-15 21:19:03
+/* Smarty version 3.1.38, created on 2021-02-16 01:14:18
   from 'C:\xampp\htdocs\MShop\view\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_602ad7372268c8_17658064',
+  'unifunc' => 'content_602b0e5a9311b8_41933036',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '73b3019715c5c6d421d249a5465b31e55fdd257e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\login.tpl',
-      1 => 1613420339,
+      1 => 1613433922,
       2 => 'file',
     ),
   ),
@@ -20,61 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602ad7372268c8_17658064 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602b0e5a9311b8_41933036 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
 
 
-  <div class="page-heading bg-light">
-    <div class="container">
-      <div class="row align-items-end d-flex justify-content-center">
-        <div class="col-lg-6">
-          <h3>Olá <b><?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
-</b>, seja bem vindo! O que deseja fazer agora?</h3>        
-        </div>
-      </div>
-    </div>
-  </div>
-
   
-  <div class="untree_co-section justify-content-center">
-    <div class="container">
-      <div class="row mb-5 justify-content-center">
-          <div class="site-blocks-table">
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="product-thumbnail">
-                    <a href=""><button class="btn btn-info btn-lg py-3 btn-block" type="submit">Minha Conta</button></a>
-                  </th>
-                  <th class="product-name">
-                    <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Pedidos</button></a>
-                  </th>
-                  <th class="product-price">
-                    <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Meus Dados</button></a>
-                  </th>
-                  <th class="product-quantity">
-                    <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Carrinho</button></a>
-                  </th>
-                  <th class="product-total">
-                    <a href=""><button class="btn btn-warning btn-lg py-3 btn-block" type="submit">Alterar Senha</button></a>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td colspan="5" class="table-active">
-                    <a href=""><button class="btn btn-danger btn-lg py-3 btn-block" type="submit">Sair</button></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-          </div>
-      </div>
-
-    </div>
-  </div>
 
 <?php } else { ?>
 

@@ -69,26 +69,27 @@ class Login extends Conexao{
 
 	static function Logoff(){
 		unset($_SESSION['CLI']);
-		echo '<h4 class="alert alert-success"> Saindo... </h4>';
-		Rotas::Redirecionar(2, Rotas::get_SiteHome());
+		echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Saindo... </h4>';
+				header("Location: " .Rotas::get_SiteHome());
+					die();
 	}
 
 
 
 
-	/*//funcao para mostrar o menu do cliente
+	//funcao para mostrar o menu do cliente
 	static function MenuCliente(){
         
      // verifo se não esta logado 
             if(!self::Logado()):
 
-                self::AcessoNegado();
+                //self::AcessoNegado();
                 Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
                               
-                // caso nao redirecione  saiu  do bloco
+                // caso nao redirecione, saiu  do bloco
                 exit();
                             
-            // caso esteja mostra a tela minha conta 
+            // caso esteja, mostra a tela minha conta 
             else:
                 
         $smarty = new Template();
@@ -96,15 +97,15 @@ class Login extends Conexao{
         $smarty->assign('PAG_CONTA', Rotas::pag_ClienteConta());
         $smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
         $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
-        $smarty->assign('PAG_CLIENTE_PEDIDOS', Rotas::pag_CLientePedidos());
+        /*$smarty->assign('PAG_CLIENTE_PEDIDOS', Rotas::pag_CLientePedidos());
         $smarty->assign('PAG_CLIENTE_DADOS', Rotas::pag_CLienteDados());
-        $smarty->assign('PAG_CLIENTE_SENHA', Rotas::pag_CLienteSenha());
+        $smarty->assign('PAG_CLIENTE_SENHA', Rotas::pag_CLienteSenha());*/
         $smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
         
         $smarty->display('menu_cliente.tpl');
         
               endif;
-    }*/
+    }
 
 
 

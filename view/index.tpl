@@ -52,8 +52,6 @@
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
-
-
   
   <nav class="site-nav mb-5">
     <div class="sticky-nav js-sticky-header">
@@ -77,9 +75,7 @@
                 <li><a href="{$PAG_PRODUTOS}">Todos</a></li>
 
               </ul>
-
               
-
             </li>
             <li><a href="{$PAG_PRODUTOS}">Produtos</a></li>
             <li><a href="{$PAG_SOBRE}">Sobre</a></li>
@@ -130,13 +126,14 @@
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-8 text-right text-lg-right">
 
-              <h1 class="mb-4 heading text-dark" data-aos="fade-up" data-aos-delay="100">Loja Virtual
+              <h1 class="mb-4 heading text-dark">Loja Virtual
                 <BR>
                 <a class="text-info">M-Shop</a></h1>
-              <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div class="mb-5 text-white desc mx-auto">
               </div>
 
-              <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-outline-black">Saiba Mais</a></p>
+              <p class="mb-0"><a href="#" class="btn btn-outline-black">Saiba Mais</a>
+              </p>
 
             </div>
           </div>

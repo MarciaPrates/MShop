@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-15 21:46:25
+/* Smarty version 3.1.38, created on 2021-02-16 00:53:50
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.38',
-  'unifunc' => 'content_602adda1c0dd79_01337644',
+  'unifunc' => 'content_602b098e090182_56731843',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1613421970,
+      1 => 1613433227,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602adda1c0dd79_01337644 (Smarty_Internal_Template $_smarty_tpl) {
+function content_602b098e090182_56731843 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -85,8 +85,6 @@ function content_602adda1c0dd79_01337644 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
-
-
   
   <nav class="site-nav mb-5">
     <div class="sticky-nav js-sticky-header">
@@ -122,9 +120,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 ">Todos</a></li>
 
               </ul>
-
               
-
             </li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 ">Produtos</a></li>
@@ -181,13 +177,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-8 text-right text-lg-right">
 
-              <h1 class="mb-4 heading text-dark" data-aos="fade-up" data-aos-delay="100">Loja Virtual
+              <h1 class="mb-4 heading text-dark">Loja Virtual
                 <BR>
                 <a class="text-info">M-Shop</a></h1>
-              <div class="mb-5 text-white desc mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div class="mb-5 text-white desc mx-auto">
               </div>
 
-              <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-outline-black">Saiba Mais</a></p>
+              <p class="mb-0"><a href="#" class="btn btn-outline-black">Saiba Mais</a>
+              </p>
 
             </div>
           </div>
