@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-16 01:14:18
+/* Smarty version 3.1.39, created on 2021-02-21 20:43:03
   from 'C:\xampp\htdocs\MShop\view\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.38',
-  'unifunc' => 'content_602b0e5a9311b8_41933036',
+  'version' => '3.1.39',
+  'unifunc' => 'content_6032b7c73b04c1_68465748',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602b0e5a9311b8_41933036 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6032b7c73b04c1_68465748 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
 
 

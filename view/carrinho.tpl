@@ -78,18 +78,18 @@
               <!--<button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>-->
             </div>
           </div>
-          <!--<div class="row">
+          <div class="row">
             <div class="col-md-12">
-              <label class="text-black h4" for="coupon">Cupom</label>
-              <p>Coloque seu cupom aqui.</p>
+              <label class="text-black h4" for="coupon">Frete</label>
+              <p>Calcule o frete aqui.</p>
             </div>
             <div class="col-md-8 mb-3 mb-md-0">
-              <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
+              <input type="text" class="form-control py-3" id="coupon" placeholder="Digite o CEP">
             </div>
             <div class="col-md-4">
-              <button class="btn btn-black">Aplicar cupom</button>
+              <button class="btn btn-primary">Calcular</button>
             </div>
-          </div>-->
+          </div>
         </div>
         <div class="col-md-6 pl-5">
           <div class="row justify-content-end">

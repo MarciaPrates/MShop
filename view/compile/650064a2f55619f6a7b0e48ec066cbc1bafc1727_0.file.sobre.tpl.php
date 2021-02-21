@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-01-24 20:09:31
+/* Smarty version 3.1.39, created on 2021-02-21 22:34:51
   from 'C:\xampp\htdocs\MShop\view\sobre.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.38',
-  'unifunc' => 'content_600dc5eb832503_57027610',
+  'version' => '3.1.39',
+  'unifunc' => 'content_6032d1fb41b2b5_46348806',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_600dc5eb832503_57027610 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6032d1fb41b2b5_46348806 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="untree_co-section">
     <div class="container">
       <div class="row justify-content-between">

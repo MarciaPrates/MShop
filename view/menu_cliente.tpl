@@ -18,19 +18,19 @@
               <thead>
                 <tr>
                   <th class="product-thumbnail">
-                    <a href=""><button class="btn btn-info btn-lg py-3 btn-block" type="submit">Minha Conta</button></a>
+                    <a href="{$PAG_CONTA}"><button class="btn btn-info btn-lg py-3 btn-block" type="submit">Minha Conta</button></a>
                   </th>
                   <th class="product-name">
                     <a href="{$PAG_CLIENTE_PEDIDOS}"><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Pedidos</button></a>
                   </th>
                   <th class="product-price">
-                    <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Meus Dados</button></a>
+                    <a href="{$PAG_CLIENTE_DADOS}"><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Meus Dados</button></a>
                   </th>
                   <th class="product-quantity">
-                    <a href=""><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Carrinho</button></a>
+                    <a href="{$PAG_CARRINHO}"><button class="btn btn-success btn-lg py-3 btn-block" type="submit">Carrinho</button></a>
                   </th>
                   <th class="product-total">
-                    <a href=""><button class="btn btn-warning btn-lg py-3 btn-block" type="submit">Alterar Senha</button></a>
+                    <a href="{$PAG_CLIENTE_SENHA}"><button class="btn btn-warning btn-lg py-3 btn-block" type="submit">Alterar Senha</button></a>
                   </th>
                 </tr>
               </thead>

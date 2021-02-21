@@ -7,9 +7,25 @@ if (!Login::Logado()) {
 
 	if(isset($_SESSION['PRO'])) {
 
+
+		
+
 	$smarty = new Template();
 
 	$carrinho = new Carrinho();
+
+		$ref_cod_pedido = date("Y-m-d H:i:s") . $_SESSION['CLI']['cli_id'];
+
+		if (!isset($_SESSION['PED']['pedido'])) {
+			$_SESSION['PED']['pedido'] = $ref_cod_pedido;
+	
+		}
+
+		if (!isset($_SESSION['PED']['ref'])) {
+			$_SESSION['PED']['ref'] = $ref_cod_pedido;
+			
+		}
+
 
 	$smarty->assign('PRO', $carrinho->GetCarrinho());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
@@ -18,8 +34,8 @@ if (!Login::Logado()) {
 	
 	$pedido = new Pedidos();
 	$cliente = 1;
-	$cod = $_SESSION['pedido'];
-	$ref = '054451ref';
+	$cod = $_SESSION['PED']['pedido'];
+	$ref = $_SESSION['PED']['ref'];
 
 
 

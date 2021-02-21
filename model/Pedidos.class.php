@@ -39,7 +39,6 @@ class Pedidos extends Conexao{
     function GetPedidosCliente($cliente=null){
       $query = "SELECT * FROM {$this->prefix}pedidos p INNER JOIN {$this->prefix}clientes c";
       $query .= " ON p.ped_cliente = c.cli_id";
-      echo $query;
       if($cliente != null){
         $cli = (int)$cliente;
         $query .= " WHERE ped_cliente = {$cli}";
@@ -106,7 +105,8 @@ class Pedidos extends Conexao{
 
 	function LimparSessoes(){
 		unset($_SESSION['PRO']);
-		unset($_SESSION['pedido']);
+		unset($_SESSION['PED']['pedido']);
+    unset($_SESSION['PED']['ref']);
 		
 	}
 

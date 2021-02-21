@@ -5,10 +5,16 @@ if (!isset($_SESSION)) {
 	
 }
 
-if (!isset($_SESSION['pedido'])) {
+/*if (!isset($_SESSION['PED']['pedido'])) {
 	$_SESSION['pedido'] = md5(uniqid(date('YmdHis')));
 	
 }
+
+if (!isset($_SESSION['PED']['ref'])) {
+	$_SESSION['ref'] = date('ymdHis');
+	
+}*/
+
 
 require './lib/autoload.php';
 

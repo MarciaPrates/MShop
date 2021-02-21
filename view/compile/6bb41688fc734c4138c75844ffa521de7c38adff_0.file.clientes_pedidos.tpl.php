@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-17 00:40:53
-  from 'C:\xampp\htdocs\MShop\view\clentes_pedidos.tpl' */
+/* Smarty version 3.1.39, created on 2021-02-21 20:37:02
+  from 'C:\xampp\htdocs\MShop\view\clientes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.38',
-  'unifunc' => 'content_602c580532ef25_17569625',
+  'version' => '3.1.39',
+  'unifunc' => 'content_6032b65e821011_59840425',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '4f0f9f4bd585404d9a28328104bedf378fc6e87a' => 
+    '6bb41688fc734c4138c75844ffa521de7c38adff' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\MShop\\view\\clentes_pedidos.tpl',
-      1 => 1613518847,
+      0 => 'C:\\xampp\\htdocs\\MShop\\view\\clientes_pedidos.tpl',
+      1 => 1613932785,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602c580532ef25_17569625 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="page-heading bg-light">
+function content_6032b65e821011_59840425 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="page-heading bg-light" id="secao-cliente-pedidos">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
@@ -34,7 +34,7 @@ function content_602c580532ef25_17569625 (Smarty_Internal_Template $_smarty_tpl)
 
 <div class="untree_co-section">
     <div class="container">
-      <div class="row mb-3">
+      <div class="row mb-2">
         <form class="col-md-12" method="post">
           <div class="site-blocks-table">
             <table class="table table-bordered">

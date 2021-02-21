@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.38, created on 2021-02-16 00:53:50
+/* Smarty version 3.1.39, created on 2021-02-21 22:13:25
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.38',
-  'unifunc' => 'content_602b098e090182_56731843',
+  'version' => '3.1.39',
+  'unifunc' => 'content_6032ccf5c13035_38992430',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1613433227,
+      1 => 1613941633,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_602b098e090182_56731843 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6032ccf5c13035_38992430 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -144,6 +144,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
             <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
 " class="user-profile">
+              <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?> <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
+ <?php }?>
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M13 14s1 0 1-1-1-4-6-4-6 3-6 4 1 1 1 1h10zm-9.995-.944v-.002.002zM3.022 13h9.956a.274.274 0 0 0 .014-.002l.008-.002c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664a1.05 1.05 0 0 0 .022.004zm9.974.056v-.002.002zM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
               </svg>

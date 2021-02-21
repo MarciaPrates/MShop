@@ -4,7 +4,7 @@ Class Rotas{
 
 	public static $pag;
 	private static $pasta_controller = 'controller';
-	private static $pasta_view = 'view/';
+	private static $pasta_view = 'view';
 
 
 
@@ -20,16 +20,32 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/' .self::$pasta_view;
 	}
 
+	static function pag_ClienteCadastro(){
+		return  self::get_SiteHOME(). '/cadastro';
+	}
+
+	static function pag_CLienteDados(){
+		return  self::get_SiteHOME(). '/clientes_dados';
+	}
+
+	static function pag_CLienteSenha(){
+		return  self::get_SiteHOME(). '/clientes_senha';
+	}
+
+	static function pag_ClienteRecovery(){
+		return  self::get_SiteHOME(). '/clientes_recovery';
+	}
+
+	static function pag_CLientePedidos(){
+		return  self::get_SiteHOME(). '/clientes_pedidos';
+	}
+
+	static function pag_ClienteItens(){
+		return  self::get_SiteHOME(). '/cliente_itens';
+	}
+
 	static function pag_Carrinho(){
 		return  self::get_SiteHOME(). '/carrinho';
-	}
-
-	static function pag_CarrinhoAlterar(){
-		return  self::get_SiteHOME(). '/carrinho_alterar';
-	}
-
-	static function pag_ClientePedidos(){
-		return  self::get_SiteHOME(). '/clientes_pedidos';
 	}
 
 	static function pag_ClienteLogin(){
@@ -40,6 +56,10 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/logoff';
 	}
 
+	static function pag_CarrinhoAlterar(){
+		return  self::get_SiteHOME(). '/carrinho_alterar';
+	}
+
 	static function pag_Produtos(){
 		return  self::get_SiteHOME(). '/produtos';
 	}
@@ -48,7 +68,7 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/produtos_info';
 	}
 
-		static function pag_Contato(){
+	static function pag_Contato(){
 		return  self::get_SiteHOME(). '/contato';
 	}
 

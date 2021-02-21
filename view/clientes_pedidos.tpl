@@ -1,4 +1,4 @@
-<div class="page-heading bg-light">
+<div class="page-heading bg-light" id="secao-cliente-pedidos">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
@@ -11,7 +11,7 @@
 
 <div class="untree_co-section">
     <div class="container">
-      <div class="row mb-3">
+      <div class="row mb-2">
         <form class="col-md-12" method="post">
           <div class="site-blocks-table">
             <table class="table table-bordered">
