@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-02-21 23:17:33
+/* Smarty version 3.1.39, created on 2021-02-28 22:45:51
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6032dbfdc29223_88856453',
+  'unifunc' => 'content_603c0f0f853e17_64598095',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1613945851,
+      1 => 1614548748,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6032dbfdc29223_88856453 (Smarty_Internal_Template $_smarty_tpl) {
+function content_603c0f0f853e17_64598095 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -119,16 +119,26 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <label class="text-black h4" for="coupon">Frete</label>
+              <label class="text-black h4">Frete</label>
               <p>Calcule o frete aqui.</p>
             </div>
-            <div class="col-md-8 mb-3 mb-md-0">
-              <input type="text" class="form-control py-3" id="coupon" placeholder="Digite o CEP">
+            <div class="col-md-8 mb-3 mb-md-0" id="dadosfrete">
+              <input type="hidden" name="peso_frete" id="peso_frete" value="2" class="form-control " readonly>
+
+              <input type="text" name="cep_frete" value="" class="form-control py-3" id="cep_frete" placeholder="Digite o CEP">
+
+              <input type="hidden" name="frete_valor" id="frete_valor" value="0">
             </div>
+            <span id="frete"></span>
+
             <div class="col-md-4">
-              <button class="btn btn-primary">Calcular</button>
+              <button class="btn btn-primary" id="buscar_frete">Calcular</button>
+
             </div>
+            
+
           </div>
+
         </div>
         <div class="col-md-6 pl-5">
           <div class="row justify-content-end">

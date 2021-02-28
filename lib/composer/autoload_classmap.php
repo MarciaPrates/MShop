@@ -11,6 +11,7 @@ return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conexao' => $baseDir . '/model/Conexao.class.php',
     'Config' => $baseDir . '/model/Config.class.php',
+    'Correios' => $baseDir . '/model/Correios.class.php',
     'EasyPeasyICS' => $vendorDir . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
     'Itens' => $baseDir . '/model/ItensPedido.class.php',
     'Login' => $baseDir . '/model/Login.class.php',

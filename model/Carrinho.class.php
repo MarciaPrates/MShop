@@ -112,6 +112,8 @@ class Carrinho{
 		unset($_SESSION['PRO']);
 	}
 
+	
+
 
 }
 

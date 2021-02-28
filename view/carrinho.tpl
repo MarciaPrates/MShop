@@ -80,16 +80,24 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <label class="text-black h4" for="coupon">Frete</label>
+              <label class="text-black h4">Frete</label>
               <p>Calcule o frete aqui.</p>
             </div>
-            <div class="col-md-8 mb-3 mb-md-0">
-              <input type="text" class="form-control py-3" id="coupon" placeholder="Digite o CEP">
+            <div class="col-md-8 mb-3 mb-md-0" id="dadosfrete">
+              <input type="hidden" name="peso_frete" id="peso_frete" value="2" class="form-control " readonly>
+
+              <input type="text" name="cep_frete" value="" class="form-control py-3" id="cep_frete" placeholder="Digite o CEP">
+
+              <input type="hidden" name="frete_valor" id="frete_valor" value="0">
             </div>
+
             <div class="col-md-4">
-              <button class="btn btn-primary">Calcular</button>
+              <button class="btn btn-primary" id="buscar_frete">Calcular</button>
             </div>
+            <span id="frete"></span>
+
           </div>
+
         </div>
         <div class="col-md-6 pl-5">
           <div class="row justify-content-end">
