@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-02-21 21:46:20
+/* Smarty version 3.1.39, created on 2021-03-08 00:52:36
   from 'C:\xampp\htdocs\MShop\view\pedido_confirmar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6032c69c5865e4_94474498',
+  'unifunc' => 'content_60456744842e64_11295832',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd2d4507be25a0cda25d5c6692ff4db353b0d82e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\pedido_confirmar.tpl',
-      1 => 1612220152,
+      1 => 1615160782,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6032c69c5865e4_94474498 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60456744842e64_11295832 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -132,10 +132,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               </div>
               <div class="row mb-5">
                 <div class="col-md-6">
-                  <span class="text-black">Total</span>
+                  <span class="text-black">SubTotal</span>
                 </div>
                 <div class="col-md-6 text-right">
-                  <strong class="text-black">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+                  <span>R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</span>
+                </div>
+                <div class="col-md-6">
+                  <span class="text-black">Frete</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <span>R$ <?php echo $_smarty_tpl->tpl_vars['FRETE']->value;?>
+</span>
+                </div>
+                <div class="col-md-6">
+                  <span class="text-black"><b>TOTAL</b></span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL_FRETE']->value;?>
 </strong>
                 </div>
               </div>

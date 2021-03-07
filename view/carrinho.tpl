@@ -69,12 +69,12 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="row mb-5">
-            <div class="col-md-6 mb-3 mb-md-0">
+            <div class="col-md-7 mb-3 mb-md-0">
               <button class="btn btn-outline-black btn-sm btn-block"><a href="{$PAG_PRODUTOS}">Continue Comprando</a></button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <!--<button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>-->
             </div>
           </div>
@@ -84,7 +84,7 @@
               <p>Calcule o frete aqui.</p>
             </div>
             <div class="col-md-8 mb-3 mb-md-0" id="dadosfrete">
-              <input type="hidden" name="peso_frete" id="peso_frete" value="2" class="form-control " readonly>
+              <input type="hidden" name="peso_frete" id="peso_frete" value="{$PESO}" class="form-control " readonly>
 
               <input type="text" name="cep_frete" value="" class="form-control py-3" id="cep_frete" placeholder="Digite o CEP">
 
@@ -94,14 +94,12 @@
             <div class="col-md-4">
               <button class="btn btn-primary" id="buscar_frete">Calcular</button>
             </div>
-            <div class="col-md-12">
-                <span id="frete"></span>
-            </div>
+            
 
           </div>
 
         </div>
-        <div class="col-md-6 pl-5">
+        <div class="col-md-7 pl-5">
           <div class="row justify-content-end">
             <div class="col-md-7">
               <div class="row">
@@ -120,9 +118,13 @@
 
               <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_CONFIRMAR}">
                 <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <span id="frete"></span>
+                  </div>
                   <div class="col-md-12">
                     <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Confirmar Pedido</button>
                   </div>
+                  
                 </div>
               </form>
 

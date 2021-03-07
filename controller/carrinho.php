@@ -13,8 +13,7 @@ if(isset($_SESSION['PRO'])) {
 	$smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 	$smarty->assign('PAG_CARRINHO_ALTERAR', Rotas::pag_CarrinhoAlterar());
 	$smarty->assign('PAG_CONFIRMAR', Rotas::pag_PedidoConfirmar());
-	$smarty->assign('PESO', $carrinho->GetPeso());
-
+	$smarty->assign('PESO', number_format($carrinho->GetPeso(),3,'.',''));
 
 
 	$smarty->display('carrinho.tpl');

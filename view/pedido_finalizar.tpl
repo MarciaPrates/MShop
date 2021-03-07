@@ -75,10 +75,22 @@
               </div>
               <div class="row mb-5">
                 <div class="col-md-6">
-                  <span class="text-black">Total</span>
+                  <span class="text-black">SubTotal</span>
                 </div>
                 <div class="col-md-6 text-right">
-                  <strong class="text-black">R$ {$TOTAL}</strong>
+                  <span>R$ {$TOTAL}</span>
+                </div>
+                <div class="col-md-6">
+                  <span class="text-black">Frete</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <span>R$ {$FRETE}</span>
+                </div>
+                <div class="col-md-6">
+                  <span class="text-black"><b>TOTAL</b></span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">R$ {$TOTAL_FRETE}</strong>
                 </div>
               </div>
 

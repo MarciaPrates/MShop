@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-07 17:00:12
+/* Smarty version 3.1.39, created on 2021-03-07 18:24:34
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6044f88ca5a828_02419143',
+  'unifunc' => 'content_60450c52bea295_66414954',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1615132805,
+      1 => 1615137872,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6044f88ca5a828_02419143 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60450c52bea295_66414954 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -107,13 +107,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       </div>
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="row mb-5">
-            <div class="col-md-6 mb-3 mb-md-0">
+            <div class="col-md-7 mb-3 mb-md-0">
               <button class="btn btn-outline-black btn-sm btn-block"><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 ">Continue Comprando</a></button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5">
               <!--<button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>-->
             </div>
           </div>
@@ -123,7 +123,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               <p>Calcule o frete aqui.</p>
             </div>
             <div class="col-md-8 mb-3 mb-md-0" id="dadosfrete">
-              <input type="hidden" name="peso_frete" id="peso_frete" value="2" class="form-control " readonly>
+              <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
+" class="form-control " readonly>
 
               <input type="text" name="cep_frete" value="" class="form-control py-3" id="cep_frete" placeholder="Digite o CEP">
 
@@ -133,14 +134,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="col-md-4">
               <button class="btn btn-primary" id="buscar_frete">Calcular</button>
             </div>
-            <div class="col-md-12">
-                <span id="frete"></span>
-            </div>
+            
 
           </div>
 
         </div>
-        <div class="col-md-6 pl-5">
+        <div class="col-md-7 pl-5">
           <div class="row justify-content-end">
             <div class="col-md-7">
               <div class="row">
@@ -161,9 +160,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
 ">
                 <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <span id="frete"></span>
+                  </div>
                   <div class="col-md-12">
                     <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Confirmar Pedido</button>
                   </div>
+                  
                 </div>
               </form>
 
