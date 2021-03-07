@@ -94,7 +94,9 @@
             <div class="col-md-4">
               <button class="btn btn-primary" id="buscar_frete">Calcular</button>
             </div>
-            <span id="frete"></span>
+            <div class="col-md-12">
+                <span id="frete"></span>
+            </div>
 
           </div>
 

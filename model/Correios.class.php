@@ -31,10 +31,10 @@ class Correios
 
 		//peso em kilogramas
 		$this->peso 		= $peso;
-		$this->comprimento      = '35'; //em cm
-		$this->altura 		= '35'; //em cm
-		$this->largura     	= '35'; //em cm
-		$this->diametro 	= '90'; //em cm
+		$this->comprimento      = '20'; //em cm
+		$this->altura 		= '6'; //em cm
+		$this->largura     	= '20'; //em cm
+		$this->diametro 	= '20'; //em cm
 		
 
 	}

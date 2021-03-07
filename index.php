@@ -40,6 +40,8 @@ $smarty->assign('CATEGORIAS', $categorias->GetItens());
 $smarty->assign('DATA', Sistema::DataAtualBR());
 $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
 $smarty->assign('LOGADO', Login::Logado());
+// Contagem de itens do carrinho
+//$smarty->assign('CONTAGEM', count($carrinho->itens));
 
 if(Login::Logado()){
 	$smarty->assign('USER', $_SESSION['CLI']['cli_nome']);

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-02-28 22:45:51
+/* Smarty version 3.1.39, created on 2021-03-07 17:00:12
   from 'C:\xampp\htdocs\MShop\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_603c0f0f853e17_64598095',
+  'unifunc' => 'content_6044f88ca5a828_02419143',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6812e7d513faa389e0e9e1166cdedaa200c0afbc' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\carrinho.tpl',
-      1 => 1614548748,
+      1 => 1615132805,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_603c0f0f853e17_64598095 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6044f88ca5a828_02419143 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -129,13 +129,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
               <input type="hidden" name="frete_valor" id="frete_valor" value="0">
             </div>
-            <span id="frete"></span>
 
             <div class="col-md-4">
               <button class="btn btn-primary" id="buscar_frete">Calcular</button>
-
             </div>
-            
+            <div class="col-md-12">
+                <span id="frete"></span>
+            </div>
 
           </div>
 
