@@ -133,8 +133,8 @@
               <div class="mb-5 text-white desc mx-auto">
               </div>
 
-              <p class="mb-0"><a href="#" class="btn btn-outline-black">Saiba Mais</a>
-              </p>
+              <!--<p class="mb-0"><a href="#" class="btn btn-outline-black">Saiba Mais</a>
+              </p>-->
 
             </div>
           </div>

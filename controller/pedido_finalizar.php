@@ -37,8 +37,14 @@ if (!Login::Logado()) {
 
 	$smarty->assign('PRO', $carrinho->GetCarrinho());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
+	$smarty->assign('NOME_CLIENTE', $_SESSION['CLI']['cli_nome']);
+	$smarty->assign('SITE_NOME', Config::SITE_NOME);
+	$smarty->assign('SITE_HOME', Rotas::get_SiteHOME());
+	$smarty->assign('PAG_MINHA_CONTA', Rotas::pag_CLientePedidos());
 	//$smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
+
 	$smarty->assign('TEMA', Rotas::get_SiteTEMA());
+
 	$smarty->assign('FRETE', Sistema::MoedaBR($_SESSION['PED']['frete']));
 	$smarty->assign('TOTAL_FRETE', Sistema::MoedaBR($_SESSION['PED']['total_com_frete']));
 	
@@ -49,6 +55,15 @@ if (!Login::Logado()) {
 	$frete = $_SESSION['PED']['frete'];
 
 
+
+
+	$email = new EnviarEmail();
+
+	$destinatarios = array(Config::SITE_EMAIL_ADM, $_SESSION['CLI']['cli_email']);
+	$assunto = 'Pedido M-Shop - ' . Sistema::DataAtualBR();
+	$msg = $smarty->fetch('email_compra.tpl');
+
+	$email->Enviar($assunto, $msg, $destinatarios);
 
 	if($pedido->PedidoGravar($cliente, $cod, $ref, $frete)) {
 		$pedido->LimparSessoes();

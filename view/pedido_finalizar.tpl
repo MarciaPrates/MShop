@@ -104,18 +104,21 @@
       <div class="row mt-4">
         <div class="col-md-12 pl-5">
           <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-9">
               <div class="row">
                 <div class="col-md-12 text-center border-bottom mb-3">
                   <h3 class="text-black h4 text-uppercase">Forma de Pagamentos:</h3>
                 </div>
               </div>
               <div class="row mb-1">
-                <div class="col-md-6 justify-content-end">
+                <div class="col-md-4 justify-content-end">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="{$TEMA}/images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
                 </div>
-                <div class="col-md-6 justify-content-end">
+                <div class="col-md-4 justify-content-end">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="{$TEMA}/images/deposito.gif" alt="Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 justify-content-end">
+                  <a href="" class="gal-item" data-fancybox="gal"><img src="{$TEMA}/images/pix.png" alt="Image" class="img-fluid"></a>
                 </div>
               </div>
 

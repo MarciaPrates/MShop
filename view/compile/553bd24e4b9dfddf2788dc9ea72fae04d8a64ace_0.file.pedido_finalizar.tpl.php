@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-08 00:53:04
+/* Smarty version 3.1.39, created on 2021-03-20 21:53:56
   from 'C:\xampp\htdocs\MShop\view\pedido_finalizar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60456760251fe0_10094963',
+  'unifunc' => 'content_605660e4d57b50_51364482',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '553bd24e4b9dfddf2788dc9ea72fae04d8a64ace' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\pedido_finalizar.tpl',
-      1 => 1615160053,
+      1 => 1615741165,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60456760251fe0_10094963 (Smarty_Internal_Template $_smarty_tpl) {
+function content_605660e4d57b50_51364482 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
@@ -143,20 +143,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       <div class="row mt-4">
         <div class="col-md-12 pl-5">
           <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-9">
               <div class="row">
                 <div class="col-md-12 text-center border-bottom mb-3">
                   <h3 class="text-black h4 text-uppercase">Forma de Pagamentos:</h3>
                 </div>
               </div>
               <div class="row mb-1">
-                <div class="col-md-6 justify-content-end">
+                <div class="col-md-4 justify-content-end">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
 /images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
                 </div>
-                <div class="col-md-6 justify-content-end">
+                <div class="col-md-4 justify-content-end">
                 	<a href="" class="gal-item" data-fancybox="gal"><img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
 /images/deposito.gif" alt="Image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 justify-content-end">
+                  <a href="" class="gal-item" data-fancybox="gal"><img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
+/images/pix.png" alt="Image" class="img-fluid"></a>
                 </div>
               </div>
 

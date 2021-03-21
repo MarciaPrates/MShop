@@ -23,7 +23,7 @@ Class Config{
 	const EMAIL_HOST = "smtp.gmail.com";
 	const EMAIL_USER = "janynascimento1988@gmail.com";
 	const EMAIL_NOME = "Contato Loja M-Shop";
-	const EMAIL_SENHA = "030991";
+	const EMAIL_SENHA = "jany2020";
 	const EMAIL_PORTA = 587;
 	const EMAIL_SMTPAUTH = true;
 	const EMAIL_SMTPSECURE = "tls";

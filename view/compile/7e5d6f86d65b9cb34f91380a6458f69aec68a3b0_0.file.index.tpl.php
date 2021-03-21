@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-07 16:50:00
+/* Smarty version 3.1.39, created on 2021-03-21 14:28:03
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6044f628023037_63946101',
+  'unifunc' => 'content_605749e3349197_31638092',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1615132194,
+      1 => 1616333274,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6044f628023037_63946101 (Smarty_Internal_Template $_smarty_tpl) {
+function content_605749e3349197_31638092 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -185,8 +185,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               <div class="mb-5 text-white desc mx-auto">
               </div>
 
-              <p class="mb-0"><a href="#" class="btn btn-outline-black">Saiba Mais</a>
-              </p>
+              <!--<p class="mb-0"><a href="#" class="btn btn-outline-black">Saiba Mais</a>
+              </p>-->
 
             </div>
           </div>

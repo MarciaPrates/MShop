@@ -32,7 +32,7 @@
               <h2 class="h3 mb-3 text-black">Métodos de pagamento:</h2>
               <div class="p-3 p-lg-3 border d-flex justify-content-center">
                 <div class="input-group w-75">
-                	<a href="" class="gal-item" data-fancybox="gal"><img src="{$TEMA}/images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
+                	<img src="{$TEMA}/images/logo-pagseguro.png" alt="Image" class="img-fluid">
                 </div>
 
               </div>

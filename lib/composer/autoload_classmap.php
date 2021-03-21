@@ -13,6 +13,7 @@ return array(
     'Config' => $baseDir . '/model/Config.class.php',
     'Correios' => $baseDir . '/model/Correios.class.php',
     'EasyPeasyICS' => $vendorDir . '/phpmailer/phpmailer/extras/EasyPeasyICS.php',
+    'EnviarEmail' => $baseDir . '/model/EnviarEmail.class.php',
     'Itens' => $baseDir . '/model/ItensPedido.class.php',
     'Login' => $baseDir . '/model/Login.class.php',
     'PHPMailer' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',

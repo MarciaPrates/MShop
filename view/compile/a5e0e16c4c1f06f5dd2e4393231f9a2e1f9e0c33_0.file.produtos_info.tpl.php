@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-02-21 21:45:31
+/* Smarty version 3.1.39, created on 2021-03-14 18:02:02
   from 'C:\xampp\htdocs\MShop\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6032c66b655852_56526746',
+  'unifunc' => 'content_604e418a310268_62757665',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5e0e16c4c1f06f5dd2e4393231f9a2e1f9e0c33' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\produtos_info.tpl',
-      1 => 1613401475,
+      1 => 1615741319,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6032c66b655852_56526746 (Smarty_Internal_Template $_smarty_tpl) {
+function content_604e418a310268_62757665 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
@@ -69,8 +69,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
               <h2 class="h3 mb-3 text-black">Métodos de pagamento:</h2>
               <div class="p-3 p-lg-3 border d-flex justify-content-center">
                 <div class="input-group w-75">
-                	<a href="" class="gal-item" data-fancybox="gal"><img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
-/images/logo-pagseguro.png" alt="Image" class="img-fluid"></a>
+                	<img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
+/images/logo-pagseguro.png" alt="Image" class="img-fluid">
                 </div>
 
               </div>
