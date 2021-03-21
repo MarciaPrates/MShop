@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-21 16:29:01
+/* Smarty version 3.1.39, created on 2021-03-21 19:14:26
   from 'C:\xampp\htdocs\MShop\view\email_compra.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6057663d3d1146_50667230',
+  'unifunc' => 'content_60578d025502d3_87476388',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '463111055bc3381b266ae2964785f9735c387708' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\email_compra.tpl',
-      1 => 1616340372,
+      1 => 1616350395,
       2 => 'file',
     ),
   ),
@@ -20,430 +20,475 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6057663d3d1146_50667230 (Smarty_Internal_Template $_smarty_tpl) {
-?><!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
-    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
-    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+function content_60578d025502d3_87476388 (Smarty_Internal_Template $_smarty_tpl) {
+?>  <style type="text/css">
+    img { max-width: 600px; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
+    a img { border: none; }
+    table { border-collapse: collapse !important;}
+    #outlook a { padding:0; }
+    .ReadMsgBody { width: 100%; }
+    .ExternalClass { width: 100%; }
+    .backgroundTable { margin: 0 auto; padding: 0; width: 100% !important; }
+    table td { border-collapse: collapse; }
+    .ExternalClass * { line-height: 115%; }
+    .container-for-gmail-android { min-width: 600px; }
 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+    * { font-family: Helvetica, Arial, sans-serif; }
 
-    <!-- CSS Reset : BEGIN -->
-    <style>
-
-        /* What it does: Remove spaces around the email design added by some email clients. */
-        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
-        html,
-body {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    height: 100% !important;
-    width: 100% !important;
-    background: #f1f1f1;
-}
-
-/* What it does: Stops email clients resizing small text. */
-* {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-/* What it does: Centers email on Android 4.4 */
-div[style*="margin: 16px 0"] {
-    margin: 0 !important;
-}
-
-/* What it does: Stops Outlook from adding extra spacing to tables. */
-table,
-td {
-    mso-table-lspace: 0pt !important;
-    mso-table-rspace: 0pt !important;
-}
-
-/* What it does: Fixes webkit padding issue. */
-table {
-    border-spacing: 0 !important;
-    border-collapse: collapse !important;
-    table-layout: fixed !important;
-    margin: 0 auto !important;
-}
-
-/* What it does: Uses a better rendering method when resizing images in IE. */
-img {
-    -ms-interpolation-mode:bicubic;
-}
-
-/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
-a {
-    text-decoration: none;
-}
-
-/* What it does: A work-around for email clients meddling in triggered links. */
-*[x-apple-data-detectors],  /* iOS */
-.unstyle-auto-detected-links *,
-.aBn {
-    border-bottom: 0 !important;
-    cursor: default !important;
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-}
-
-/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
-.a6S {
-    display: none !important;
-    opacity: 0.01 !important;
-}
-
-/* What it does: Prevents Gmail from changing the text color in conversation threads. */
-.im {
-    color: inherit !important;
-}
-
-/* If the above doesn't work, add a .g-img class to any image in question. */
-img.g-img + div {
-    display: none !important;
-}
-
-/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-/* Create one of these media queries for each additional viewport size you'd like to fix */
-
-/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-    u ~ div .email-container {
-        min-width: 320px !important;
+    body {
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: none;
+      width: 100% !important;
+      margin: 0 !important;
+      height: 100%;
+      color: #676767;
     }
-}
-/* iPhone 6, 6S, 7, 8, and X */
-@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-    u ~ div .email-container {
-        min-width: 375px !important;
+
+    td {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #777777;
+      text-align: center;
+      line-height: 21px;
     }
-}
-/* iPhone 6+, 7+, and 8+ */
-@media only screen and (min-device-width: 414px) {
-    u ~ div .email-container {
-        min-width: 414px !important;
+
+    a {
+      color: #676767;
+      text-decoration: none !important;
     }
-}
-    </style>
 
-    <!-- CSS Reset : END -->
+    .pull-left {
+      text-align: left;
+    }
 
-    <!-- Progressive Enhancements : BEGIN -->
-    <style>
+    .pull-right {
+      text-align: right;
+    }
 
-      .primary{
-  background: #17bebb;
-}
-.bg_white{
-  background: #ffffff;
-}
-.bg_light{
-  background: #f7fafa;
-}
-.bg_black{
-  background: #000000;
-}
-.bg_dark{
-  background: rgba(0,0,0,.8);
-}
-.email-section{
-  padding:2.5em;
-}
+    .header-lg,
+    .header-md,
+    .header-sm {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: normal;
+      padding: 10px 0 0;
+      color: #4d4d4d;
+    }
 
-/*BUTTON*/
-.btn{
-  padding: 10px 15px;
-  display: inline-block;
-}
-.btn.btn-primary{
-  border-radius: 5px;
-  background: #17bebb;
-  color: #ffffff;
-}
-.btn.btn-white{
-  border-radius: 5px;
-  background: #ffffff;
-  color: #000000;
-}
-.btn.btn-white-outline{
-  border-radius: 5px;
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-}
-.btn.btn-black-outline{
-  border-radius: 0px;
-  background: transparent;
-  border: 2px solid #000;
-  color: #000;
-  font-weight: 700;
-}
-.btn-custom{
-  color: rgba(0,0,0,.3);
-  text-decoration: underline;
-}
+    .header-md {
+      font-size: 24px;
+    }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Work Sans', sans-serif;
-  color: #000000;
-  margin-top: 0;
-  font-weight: 400;
-}
+    .header-sm {
+      padding: 5px 0;
+      font-size: 18px;
+      line-height: 1.3;
+    }
 
-body{
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.8;
-  color: rgba(0,0,0,.4);
-}
+    .content-padding {
+      padding: 20px 0 30px;
+    }
 
-a{
-  color: #17bebb;
-}
+    .mobile-header-padding-right {
+      width: 290px;
+      text-align: right;
+      padding-left: 10px;
+    }
 
-table{
-}
-/*LOGO*/
+    .mobile-header-padding-left {
+      width: 290px;
+      text-align: left;
+      padding-left: 10px;
+    }
 
-.logo h1{
-  margin: 0;
-}
-.logo h1 a{
-  color: #17bebb;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: 'Work Sans', sans-serif;
-}
+    .free-text {
+      width: 100% !important;
+      padding: 10px 60px 0px;
+    }
 
-/*HERO*/
-.hero{
-  position: relative;
-  z-index: 0;
-}
+    .button {
+      padding: 30px 0;
+    }
 
-.hero .text{
-  color: rgba(0,0,0,.3);
-}
-.hero .text h2{
-  color: #000;
-  font-size: 34px;
-  margin-bottom: 15px;
-  font-weight: 300;
-  line-height: 1.2;
-}
-.hero .text h3{
-  font-size: 24px;
-  font-weight: 200;
-}
-.hero .text h2 span{
-  font-weight: 600;
-  color: #000;
-}
+    .mini-block {
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      background-color: #ffffff;
+      padding: 12px 15px 15px;
+      text-align: left;
+      width: 253px;
+    }
 
+    .mini-container-left {
+      width: 278px;
+      padding: 10px 0 10px 15px;
+    }
 
-/*PRODUCT*/
-.product-entry{
-  display: block;
-  position: relative;
-  float: left;
-  padding-top: 20px;
-}
-.product-entry .text{
-  width: calc(100% - 125px);
-  padding-left: 20px;
-}
-.product-entry .text h3{
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.product-entry .text p{
-  margin-top: 0;
-}
-.product-entry img, .product-entry .text{
-  float: left;
-}
+    .mini-container-right {
+      width: 278px;
+      padding: 10px 14px 10px 15px;
+    }
 
-ul.social{
-  padding: 0;
-}
-ul.social li{
-  display: inline-block;
-  margin-right: 10px;
-}
+    .product {
+      text-align: left;
+      vertical-align: top;
+      width: 175px;
+    }
 
-/*FOOTER*/
+    .total-space {
+      padding-bottom: 8px;
+      display: inline-block;
+    }
 
-.footer{
-  border-top: 1px solid rgba(0,0,0,.05);
-  color: rgba(0,0,0,.5);
-}
-.footer .heading{
-  color: #000;
-  font-size: 20px;
-}
-.footer ul{
-  margin: 0;
-  padding: 0;
-}
-.footer ul li{
-  list-style: none;
-  margin-bottom: 10px;
-}
-.footer ul li a{
-  color: rgba(0,0,0,1);
-}
+    .item-table {
+      padding: 50px 20px;
+      width: 560px;
+    }
 
+    .item {
+      width: 300px;
+    }
 
-@media screen and (max-width: 500px) {
+    .mobile-hide-img {
+      text-align: left;
+      width: 70px;
+    }
 
+    .mobile-hide-img img {
+      border: 1px solid #e6e6e6;
+      border-radius: 4px;
+    }
 
-}
+    .title-dark {
+      text-align: left;
+      border-bottom: 1px solid #cccccc;
+      color: #4d4d4d;
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
 
+    .item-col {
+      padding-top: 20px;
+      text-align: left;
+      vertical-align: top;
+    }
 
-    </style>
+    .force-width-gmail {
+      min-width:600px;
+      height: 0px !important;
+      line-height: 1px !important;
+      font-size: 1px !important;
+    }
+
+  </style>
+
+  <style type="text/css" media="screen">
+    @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+  </style>
+
+  <style type="text/css" media="screen">
+    @media screen {
+      * {
+        font-family: 'Oxygen', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
+      }
+    }
+  </style>
+  
+  <!-- Mobile styles -->
+  <style type="text/css" media="only screen and (max-width: 480px)">
+    
+    @media only screen and (max-width: 480px) {
+      .mobile-hide {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        line-height: 0 !important;
+      }
+      table[class*="container-for-gmail-android"] {
+        min-width: 290px !important;
+        width: 100% !important;
+      }
+
+      img[class="force-width-gmail"] {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+      }
+
+      table[class="w320"] {
+        width: 320px !important;
+      }
+
+      td[class*="mobile-header-padding-left"] {
+        width: 160px !important;
+        padding-left: 0 !important;
+      }
+
+      td[class*="mobile-header-padding-right"] {
+        width: 160px !important;
+        padding-right: 0 !important;
+      }
+
+      td[class="header-lg"] {
+        font-size: 24px !important;
+        padding-bottom: 5px !important;
+      }
+
+      td[class="content-padding"] {
+        padding: 5px 0 5px !important;
+      }
+
+      td[class="button"] {
+        padding: 5px 5px 30px !important;
+      }
+
+      td[class*="free-text"] {
+        padding: 10px 18px 30px !important;
+      }
+
+      td[class~="mobile-hide-img"] {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        line-height: 0 !important;
+      }
+
+      td[class~="item"] {
+        width: 140px !important;
+        vertical-align: top !important;
+      }
+
+      td[class~="quantity"] {
+        width: 50px !important;
+      }
+
+      td[class~="price"] {
+        width: 90px !important;
+      }
+
+      td[class="item-table"] {
+        padding: 30px 20px !important;
+      }
+
+      td[class="mini-container-left"],
+      td[class="mini-container-right"] {
+        padding: 0 15px 15px !important;
+        display: block !important;
+        width: 290px !important;
+      }
+
+    }
+  </style>
 
 
 </head>
 
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
-  <center style="width: 100%; background-color: #f1f1f1;">
-    <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
-    </div>
-    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
-      <!-- BEGIN BODY -->
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-        <tr>
-          <td valign="top" class="bg_white" style="padding: 1em 2.5em 0 2.5em;">
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <td class="logo" style="text-align: left;">
-                  <h1><a> Contato M-Shop | Loja Virtual</a></h1>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr><!-- end tr -->
-        <tr>
-          <td valign="middle" class="hero bg_white" style="padding: 2em 0 2em 0;">
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <td style="padding: 0 2.5em; text-align: left;">
-                  <div class="text">
-                    <h2>Olá <?php echo $_smarty_tpl->tpl_vars['NOME_CLIENTE']->value;?>
-!</h2>
-                    <h3>Obrigado por comprar na <b><a href="<?php echo $_smarty_tpl->tpl_vars['SITE_HOME']->value;?>
-" style="text-decoration: none; color: black;"> M-Shop | Loja Virtual</a></b>.</h3>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr><!-- end tr -->
-        <tr>
-          <table class="bg_white" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tr style="border-bottom: 1px solid rgba(0,0,0,.05);">
-              <th width="80%" style="text-align:left; padding: 0 2.5em; color: #000; padding-bottom: 20px">Pedido(s)</th>
-              <th width="20%" style="text-align:right; padding: 0 2.5em; color: #000; padding-bottom: 20px">Valor</th>
-            </tr>
-            
-            <tr style="border-bottom: 2px solid rgba(0,0,0,.07);">
-              <?php
+<body bgcolor="#f7f7f7"  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="font-family: 'Oxygen', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; margin-top: 0px !important; margin-bottom: 0px !important; margin-right: 0px !important; margin-left: 0px !important; padding-top: 0px !important;padding-bottom:0px !important; padding-right: 0px !important; padding-left: 0px !important; -webkit-font-smoothing:antialiased;- webkit-text-size-adjust:none; width:100% !important; height:100%; color:#777;">
+
+<table align="center" cellpadding="0" cellspacing="0" class="container-for-gmail-android" width="100%" style="font-family: 'Oxygen', Helvetica, Arial, sans-serif; font-size:14px; line-height:21px; color: #777; border-collapse: collapse !important;">
+
+  <tr>
+    <td align="center" valign="top" width="100%" class="content-padding" style="background-color: #f7f7f7; padding-top:20px; padding-bottom: 30px; padding-right: 0; padding-left: 0;">
+      <center>
+        <table cellspacing="0" cellpadding="0" width="600" class="w320">
+          <tr>
+            <td class="header-lg" style="text-align:center; font-size:32px; line-height:normal; padding:10px 0 0 0; color:#4d4d4d;">
+              Contato M-Shop | Loja Virtual
+            </td>
+          </tr>
+          <tr>
+            <td class="free-text" style="padding-top:10px; padding-bottom:0px; padding-right:60px; padding-left:60px;">
+              Olá <?php echo $_smarty_tpl->tpl_vars['NOME_CLIENTE']->value;?>
+!<br>
+              Obrigado por comprar na <b><a href="<?php echo $_smarty_tpl->tpl_vars['SITE_HOME']->value;?>
+" style="text-decoration: none; color: black;"> M-Shop | Loja Virtual</a></b>.<br><br><br><br>
+            </td>
+          </tr>
+          <tr>
+            <td class="w320"  >
+              <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td class="mini-container-left" valign="top" style="width:278px; padding:10px 0 10px 15px;">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td class="mini-block-padding"  >
+                          <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
+                            <tr>
+                              <td class="mini-block" style="border:1px solid #e5e5e5; border-radius:5px; background-color:#ffffff; padding:12px 15px 15px; text-align:left; width:253px;">
+                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
+                                  Data do Pedido
+                                </span><br>
+
+                                March 21, 2016 at 11:45AM (MST)<br><br>
+                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
+                                  Número do Pedido
+                                </span><br>
+                                  #123456
+                                <br><br>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="mini-container-right" valign="top" style="width:278px; padding:10px 14px 10px 15px;">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tr>
+                        <td class="mini-block-padding"  >
+                          <table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate !important;">
+                            <tr>
+                              <td class="mini-block" style="border:1px solid #e5e5e5; border-radius:5px; background-color:#ffffff; padding:12px 15px 15px; text-align:left; width:253px;">
+                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
+                                  Data do Pedido
+                                </span><br>
+
+                                March 21, 2016 at 11:45AM (MST)<br><br>
+                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
+                                  Número do Pedido
+                                </span><br>
+                                  #123456
+                                <br><br>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" valign="top" width="100%" style="background-color: #ffffff;  border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5;">
+      <center>
+        <table cellpadding="0" cellspacing="0" width="600" class="w320">
+          <tr>
+            <td class="item-table" style="padding: 50px 20px; width:560px;">
+              <table cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                  <td class="title-dark" width="300" style="text-align:left; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#cccccc; color:#4d4d4d; padding-bottom: 5px;">
+                    Itens
+                  </td>
+                 <td class="title-dark" width="200" style="text-align: right; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#cccccc; color:#4d4d4d; padding-bottom: 5px;">
+                    Qtd
+                  </td>
+                  <td class="title-dark" width="100" style="text-align: right; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#cccccc; color:#4d4d4d; padding-bottom: 5px;">
+                    Total
+                  </td>
+                </tr>
+
+                <tr>
+                  <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 $_smarty_tpl->tpl_vars['P']->do_else = false;
 ?>
-              <td valign="middle" width="80%" style="text-align:left; padding: 0 2.5em;">
-                <div class="product-entry">
-                  <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img'];?>
-" alt="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
-" style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;">
-                  <div class="text">
-                    <h3><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
-</h3>
-                    <span>Qtd: <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
-</span>
-                    <p>Qtd: <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
-</p>
-                  </div>
-                </div>
-              </td>
-              <td valign="middle" width="30%" style="text-align:left; padding: 0 2.5em;">
-                <span class="price" style="color: #000; font-size: 20px;"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
-</span>
-              </td>
-              <?php
+                  <td class="item-col item" style="width:300px; padding-top: 20px; text-align:left; vertical-align:top;">
+
+                    <table cellspacing="0" cellpadding="0" width="100%">
+                      <tr>
+                        
+                        <td class="mobile-hide-img" valign="top" style="width: 70px; text-align: left;">
+                          <a href="http://www.aromatics.com/products/accessories/blank-inhaler" style=" color:#676767;text-decoration:none !important;" >
+                            <img width="60" height="60" src="http://www.aromatics.com/uploads/channel_images/927/ai_nov._3__2014_020__checkout.jpg" alt="" style="outline-style:none; text-decoration:none; border: 1px solid #e6e6e6; border-radius:4px;">
+                          </a>
+                        </td>
+                        <td class="product" valign="top" style="width:175px; text-align: left;">
+                          <span style="color: #4d4d4d; font-weight:bold;"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
+</span> <br>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="item-col quantity" style="text-align:right; padding-top:20px; vertical-align: top;">
+                    <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_qtd'];?>
+<br>
+                  </td>
+                  <td class="item-col"  style="text-align:right; padding-top:20px; vertical-align: top;">
+                    <?php echo $_smarty_tpl->tpl_vars['P']->value['pro_valor'];?>
+
+                  </td>
+                  
+                </tr>
+                <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-            </tr>
-          </table>
-        </tr><!-- end tr -->
-      <!-- 1 Column Text + Button : END -->
-      </table>
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
-        <tr>
-          <td valign="middle" class="bg_light footer email-section">
-            <table>
-              <tr>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-right: 10px;">
-                        <h3 class="heading">SubTotal</h3>
-                        <ul>
-                          <li class="text btn btn-primary">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
-</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
-                        <h3 class="heading">Frete</h3>
-                        <ul>
-                          <li><span class="text btn btn-primary">R$ <?php echo $_smarty_tpl->tpl_vars['FRETE']->value;?>
-</span></li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td valign="top" width="33.333%" style="padding-top: 20px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="text-align: left; padding-left: 10px;">
-                        <h3 class="heading">Total</h3>
-                        <ul>
-                          <li class="btn btn-primary">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL_FRETE']->value;?>
-</li>
-                        </ul>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr><!-- end: tr -->
-      </table>
+                
 
-    </div>
-  </center>
-</body>
-</html>
-<?php }
+                <tr>
+                  <td class="item-col item" style="text-align: left; border-top: 1px solid #cccccc;"></td>
+                  <td class="item-col quantity" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
+                    <span class="total-space" style="padding-bottom: 8px; display: inline-block;">Subtotal</span>
+                  </td>
+                  <td class="item-col price" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
+                    <span class="total-space">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="item" style="width: 200px;"></td>
+                  <td class="quantity" valign="top" style="text-align: right;">
+                    <span class="total-space" style="padding-bottom: 8px; display:inline-block;">Frete</span>
+                  </td>
+                  <td class="price" valign="top" style="text-align: right;">
+                    <span class="total-space" style="padding-bottom: 8px; display: inline-block; color:#89A85C;">+R$ <?php echo $_smarty_tpl->tpl_vars['FRETE']->value;?>
+</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="item"></td>
+                  <td class="quantity" valign="top" style="text-align: right;">
+                    <span class="total-space" style="font-weight: bold; color: #4d4d4d; padding-bottom: 8px; display:inline-block;">Total</span>
+                  </td>
+                  <td class="price" valign="top" style="text-align: right;">
+                    <span class="total-space" style="font-weight:bold; color: #4d4d4d; padding-bottom: 8px; display:inline-block;">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL_FRETE']->value;?>
+</span>
+                  </td>
+                </tr> 
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+  <tr>
+    <td align="center" valign="top" width="100%" style="background-color: #340841; color: #7f4b86; height: 100px; text-align:center;">
+      <center>
+        <table cellspacing="0" cellpadding="0" width="600" class="w320">
+          <tr>
+            <td style="padding: 30px 0 10px; color:#7f4b86; text-align:center;">
+              <span style="color:#7f4b86;" >
+                <strong>M-Shop | Loja Virtual</strong><br>
+                Brasil<br>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+
+</table>
+
+
+</body><?php }
 }
