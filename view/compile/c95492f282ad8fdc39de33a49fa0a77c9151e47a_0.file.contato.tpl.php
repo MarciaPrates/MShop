@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-02-21 22:37:29
+/* Smarty version 3.1.39, created on 2021-03-28 22:18:16
   from 'C:\xampp\htdocs\MShop\view\contato.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6032d2998908a4_97017719',
+  'unifunc' => 'content_6060e488778c13_19110586',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c95492f282ad8fdc39de33a49fa0a77c9151e47a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\contato.tpl',
-      1 => 1609088393,
+      1 => 1616962694,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6032d2998908a4_97017719 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6060e488778c13_19110586 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="page-heading bg-light">
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Contate-nos</h1>  
-          <p class="mb-4"><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
-">Início</a> / <strong>Cantato</strong></p>        
+          <h1>Contate-nos</h1>         
         </div>
       </div>
     </div>

@@ -5,8 +5,8 @@ $smarty = new Template();
 
 if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cli_cpf'])){
 	//variaveis
-	 $cli_nome = $_POST['cli_nome'];
-	 $cli_sobrenome = $_POST['cli_sobrenome'];
+	$cli_nome = $_POST['cli_nome'];
+	$cli_sobrenome = $_POST['cli_sobrenome'];
      $cli_data_nasc = $_POST['cli_data_nasc'];
      $cli_rg        = $_POST['cli_rg'];
      $cli_cpf       = $_POST['cli_cpf'];
@@ -42,14 +42,14 @@ if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cl
      $smarty->assign('SITE_HOME', Rotas::get_SiteHOME());
 
      $email = new EnviarEmail();
-     $assunto = 'Cadastro Efetuado - ' . Config::SITE_NOME;
+     $assunto = 'Cadastro ' . Config::SITE_NOME;
      $msg = $smarty->fetch('email_cliente_cadastro.tpl');
-	 $destinatarios = array($cli_email, Config::SITE_EMAIL_ADM);
-     $email->Enviar($assunto, $msg, $destinatarios);
+	$destinatarios = array($cli_email, Config::SITE_EMAIL_ADM);
+     $email->Enviar($assunto, $msg, $destinatarios); 
 
 
-     echo'<div class="alert alert-success"> Cadastro Efetuado!! A senha para fazer login foi enviada para seu email cadastrado. <br>' . 'Acesse seu email e confira!</div>';
-     Rotas::Redirecionar(5, Rotas::pag_ClienteLogin());
+     
+     echo "<script>alert('Cadastro Efetuado com sucesso!! A senha foi enviada para seu email cadastrado!'); window.location = 'login';</script>";
 
 }else{
 	$smarty->display('cadastro.tpl');

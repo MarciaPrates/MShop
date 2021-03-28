@@ -43,7 +43,7 @@ class Login extends Conexao{
             $_SESSION['CLI']['cli_data_cad']  =  $lista['cli_data_cad'];
             $_SESSION['CLI']['cli_pass']      =  $lista['cli_pass']; 
 
-			header("Location: " .Rotas::get_SiteHome());
+			header("Location: " .Rotas::pag_MinhaConta());
 					die();
 			
 
@@ -117,7 +117,7 @@ class Login extends Conexao{
 	}
 
 	private function setSenha($senha){
-		$this->senha = /*Sistema::Criptografia(*/$senha/*)*/;
+		$this->senha = /*Sistema::Criptografia(*/md5($senha)/*)*/;
 	}
 
 	function getUser(){

@@ -2,7 +2,8 @@
     <div class="container">
       <div class="row align-items-end d-flex justify-content-center">
         <div class="col-lg-6">
-          <h3>Olá <b>{$USER}</b>, seja bem vindo(a)! O que deseja fazer agora?</h3>        
+          <h3>Olá <b>{$USER}</b>, seja bem vindo(a)! O que deseja fazer agora?</h3>
+          <a href="./"><button class="btn btn-secondary btn-lg py-3 btn-block" type="submit">Ir para o site</button></a>        
         </div>
       </div>
     </div>

@@ -2,8 +2,7 @@
     <div class="container">
       <div class="row align-items-end">
         <div class="col-lg-7">
-          <h1>Contate-nos</h1>  
-          <p class="mb-4"><a href="{$GET_HOME}">Início</a> / <strong>Cantato</strong></p>        
+          <h1>Contate-nos</h1>         
         </div>
       </div>
     </div>

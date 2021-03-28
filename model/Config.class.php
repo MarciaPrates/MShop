@@ -22,7 +22,7 @@ Class Config{
 	//INFORMAÇÕES PARA PHP MAILLER
 	const EMAIL_HOST = "smtp.gmail.com";
 	const EMAIL_USER = "janynascimento1988@gmail.com";
-	const EMAIL_NOME = "Contato Loja M-Shop";
+	const EMAIL_NOME = "Contato M-Shop | Loja Virtual";
 	const EMAIL_SENHA = "jany2020";
 	const EMAIL_PORTA = 587;
 	const EMAIL_SMTPAUTH = true;

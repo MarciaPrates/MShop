@@ -61,15 +61,14 @@ class Clientes extends Conexao{
 
     function Inserir(){
     	if($this->GetClienteCPF($this->getCli_cpf()) > 0){
-    		echo '<div class="alert alert-danger " id="erro_mostrar"> Este CPF já existe';
-    		Sistema::VoltarPagina();
-    		echo '</div>';
-    		exit();
+    		echo "<script>alert('Este CPF já existe!');</script>";
+            Rotas::Redirecionar(1, Rotas::pag_ClienteCadastro());
+            exit();
     	}
 
     	if($this->GetClienteEmail($this->getCli_email()) > 0){
-    		echo '<div class="alert alert-danger " id="erro_mostrar"> Este Email já existe';
-    		Sistema::VoltarPagina();
+    		echo "<script>alert('Este Email já existe!');</script>";
+    		Rotas::Redirecionar(1, Rotas::pag_ClienteCadastro());
     		echo '</div>';
     		exit();
     	}
@@ -109,7 +108,6 @@ class Clientes extends Conexao{
         );
         
       
-            
             $this->ExecuteSQL($query, $params);
            
             
@@ -120,7 +118,7 @@ class Clientes extends Conexao{
 
 
 
-
+/*
 
     //MÉTODO EDITAR
     function Editar($id){
@@ -189,7 +187,7 @@ class Clientes extends Conexao{
 
         
     }
-
+*/
 
 
     //BUSCAR SE O CPF DO CLIENTE JÁ EXISTE
@@ -219,8 +217,6 @@ class Clientes extends Conexao{
     	$params = array(':senha'=> $this->getCli_senha(), ':email'=> $this->getCli_email());
     	$this->ExecuteSQL($query, $params);
     }
-
-
 
 
 
@@ -304,9 +300,6 @@ class Clientes extends Conexao{
     function getCli_senha() {
         return $this->cli_senha;
     }
-
-
-
 
 
 
