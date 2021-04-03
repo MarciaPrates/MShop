@@ -294,12 +294,7 @@
                                   Data do Pedido
                                 </span><br>
 
-                                March 21, 2016 at 11:45AM (MST)<br><br>
-                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
-                                  Número do Pedido
-                                </span><br>
-                                  #123456
-                                <br><br>
+                                {$ITENS.1.ped_data}<br>
                               </td>
                             </tr>
                           </table>
@@ -307,6 +302,8 @@
                       </tr>
                     </table>
                   </td>
+
+
                   <td class="mini-container-right" valign="top" style="width:278px; padding:10px 14px 10px 15px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
                       <tr>
@@ -317,13 +314,6 @@
                                 <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
                                   Data do Pedido
                                 </span><br>
-
-                                March 21, 2016 at 11:45AM (MST)<br><br>
-                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
-                                  Número do Pedido
-                                </span><br>
-                                  #123456
-                                <br><br>
                               </td>
                             </tr>
                           </table>
@@ -387,33 +377,31 @@
                 </tr>
                 {/foreach}
                 
-
-                <tr>
-                  <td class="item-col item" style="text-align: left; border-top: 1px solid #cccccc;"></td>
-                  <td class="item-col quantity" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
+                
+                <tr class="item-col item d-flex flex-column bd-highlight mb-3">
+                  <td class="item-col item item d-flex flex-column bd-highlight mb-3" style="text-align: right; border-top: 1px solid #cccccc;"></td>
+                  <td class="item-col quantity d-flex justify-content-center" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
                     <span class="total-space" style="padding-bottom: 8px; display: inline-block;">Subtotal</span>
                   </td>
-                  <td class="item-col price" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
+                  <td class="item-col price d-flex justify-content-center" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
                     <span class="total-space">R$ {$TOTAL}</span>
                   </td>
                 </tr>
 
-                <tr>
-                  <td class="item" style="width: 200px;"></td>
-                  <td class="quantity" valign="top" style="text-align: right;">
+                <tr class="d-flex flex-column bd-highlight mb-3">
+                  <td class="quantity d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="padding-bottom: 8px; display:inline-block;">Frete</span>
                   </td>
-                  <td class="price" valign="top" style="text-align: right;">
+                  <td class="price d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="padding-bottom: 8px; display: inline-block; color:#89A85C;">+R$ {$FRETE}</span>
                   </td>
                 </tr>
 
-                <tr>
-                  <td class="item"></td>
-                  <td class="quantity" valign="top" style="text-align: right;">
+                <tr class="d-flex flex-column bd-highlight mb-3">
+                  <td class="quantity d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="font-weight: bold; color: #4d4d4d; padding-bottom: 8px; display:inline-block;">Total</span>
                   </td>
-                  <td class="price" valign="top" style="text-align: right;">
+                  <td class="price d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="font-weight:bold; color: #4d4d4d; padding-bottom: 8px; display:inline-block;">R$ {$TOTAL_FRETE}</span>
                   </td>
                 </tr> 

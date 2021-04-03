@@ -1,0 +1,362 @@
+<?php
+/* Smarty version 3.1.39, created on 2021-04-02 16:19:11
+  from 'C:\xampp\htdocs\MShop\view\cliente_itens.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_60676e2f56af99_97073144',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8bbc4b3d0e5c098bddc111ca2e33ff82ba4ee0c5' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\MShop\\view\\cliente_itens.tpl',
+      1 => 1617391147,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60676e2f56af99_97073144 (Smarty_Internal_Template $_smarty_tpl) {
+?><br><h4 class="text-center">Dados do pedido</h4>
+
+<!-- informações sobre o pedido -->
+<section class="row">
+    
+    <center>
+    <table class="table table-bordered" style="width: 80%">
+        <tr class="bg-success">
+            
+            <td><b>Data:</b> <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_data'];?>
+</td>
+            
+            <td><b>Hora:</b> <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_hora'];?>
+</td>
+            
+            <td><b>Ref:</b> <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_ref'];?>
+</td>
+            
+            <td><b>Status:</b> <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_pag_status'];?>
+</td>
+            
+        </tr>  
+        
+        
+    </table>
+    </center>
+    
+</section>
+
+
+<!-- listagem dos itens -->
+<section class="row" id="listaitens">
+    
+    <center>
+    <table class="table table-bordered" style="width: 80%">
+        
+        <tr class="text-success bg-success">
+            <td></td>
+            <td>Item</td>
+            <td>Valor Uni</td>
+            <td>X</td>
+            <td>Sub</td>
+        </tr>
+        
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['ITENS']->value, 'P');
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
+?>
+        <tr>
+            
+            <td><img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['item_img'];?>
+" alt=""> </td>
+            <td> <?php echo $_smarty_tpl->tpl_vars['P']->value['item_nome'];?>
+</td>
+            <td class="text-right"> <?php echo $_smarty_tpl->tpl_vars['P']->value['item_valor'];?>
+</td>
+            <td class="text-center"> <?php echo $_smarty_tpl->tpl_vars['P']->value['item_qtd'];?>
+</td>
+            <td class="text-right"> <?php echo $_smarty_tpl->tpl_vars['P']->value['item_sub'];?>
+</td>
+            
+        </tr>
+        
+        <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+        
+        
+    </table>
+    </center>
+    
+    
+    
+</section>
+        
+        
+        <section class="row" id="resumo">
+
+            <center>
+                <table class="table table-bordered" style="width: 80%">
+                    <tr>
+
+                        <td class="text-danger"> <b>Frete:</b> <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_frete_valor'];?>
+</td>
+
+                        <td class="text-danger"> <b>Total:</b> <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</td>
+
+                        <td class="text-danger"> <b>Final:</b> <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_frete_valor']+$_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</td>
+
+                    </tr>  
+
+
+                </table>
+             
+                        
+        </section>  
+                        
+                        
+              <?php if ($_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_pag_status'] == 'NAO') {?>          
+                         <!--  modos de pagamento e outras informações --> 
+        <section class="row">
+            <h3 class="text-center"> Formas de pagamento </h3>     
+            
+            <div class="col-md-4">
+              
+            </div>
+            <!-- botao de pagamento  -->
+            <div class="col-md-4">
+               
+                 <button class="btn btn-success btn-lg btn-block" onclick="PagSeguroLightbox({
+    code: '<?php echo $_smarty_tpl->tpl_vars['PS_COD']->value;?>
+'
+    }, {
+    success : function(transactionCode) {
+      alert('Transação efetuada - ' + transactionCode);
+        window.location ='<?php echo $_smarty_tpl->tpl_vars['PAG_RETORNO']->value;?>
+/<?php echo $_smarty_tpl->tpl_vars['REF']->value;?>
+';
+    },
+    abort : function() {
+       alert('Erro no processo de pagamento');
+         window.location ='<?php echo $_smarty_tpl->tpl_vars['PAG_ERRO']->value;?>
+/<?php echo $_smarty_tpl->tpl_vars['REF']->value;?>
+';
+    }
+});   
+
+"> Pague com o Pagseguro </button>
+                
+                
+                   <img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
+/images/logo-pagseguro.png"  alt=""> 
+                   <?php echo '<script'; ?>
+ type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['PS_SCRIPT']->value;?>
+"><?php echo '</script'; ?>
+>
+                
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+         
+            
+        </section>
+
+
+
+ <?php }?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="page-heading bg-light">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-7">
+          <h1>Dados do pedido</h1>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row mb-5">
+          <div class="site-blocks-table">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="product-thumbnail"><b>Data:</b> </th>
+                  <th class="product-name"><b>Hora:</b> </th>
+                  <th class="product-price"><b>Ref:</b> </th>
+                  <th class="product-quantity"><b>Status:</b> </th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="product-thumbnail">
+                    <h5 class="h5 text-black"><?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_data'];?>
+</h5>
+                  </td>
+                  <td class="product-name">
+                    <h5 class="h5 text-black"><?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_hora'];?>
+</h5>
+                  </td>
+                  <td><?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_ref'];?>
+</td>
+                  <td>
+                      <span class="text-black"><?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_pag_status'];?>
+</span>
+                  </td>
+                  
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+
+      <!-- listagem dos itens -->
+      <div class="row mb-5 center">
+          <div class="site-blocks-table">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="product-thumbnail">Foto</th>
+                  <th class="product-name">Item</th>
+                  <th class="product-price">Valor</th>
+                  <th class="product-quantity">X</th>
+                  <th class="product-quantity">Sub</th>
+                </tr>
+              </thead>
+              <tbody>
+              	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['ITENS']->value, 'P');
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
+?>
+                <tr>
+                  <td class="product-thumbnail">
+                    <img src="<?php echo $_smarty_tpl->tpl_vars['P']->value['item_img'];?>
+" alt="">
+                  </td>
+                  <td class="product-name">
+                    <h5 class="h5 text-black"><?php echo $_smarty_tpl->tpl_vars['P']->value['item_nome'];?>
+</h5>
+                  </td>
+                  <td><?php echo $_smarty_tpl->tpl_vars['P']->value['item_valor'];?>
+</td>
+                  <td>
+                      <span class="text-black"><?php echo $_smarty_tpl->tpl_vars['P']->value['item_qtd'];?>
+</span>
+                  </td>
+                  <td><?php echo $_smarty_tpl->tpl_vars['P']->value['item_sub'];?>
+</td>
+                  
+                </tr>
+                <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
+          <div class="row mb-5">
+            <div class="col-md-7 mb-3 mb-md-0">
+              <button class="btn btn-outline-black btn-sm btn-block"><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
+">Continue Comprando</a></button>
+            </div>
+            <div class="col-md-5">
+              <!--<button class="btn btn-black btn-sm btn-block">Atualizar Carrinho</button>-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label class="text-black h4">Frete</label>
+              <p>Calcule o frete aqui.</p>
+            </div>
+            <div class="col-md-8 mb-3 mb-md-0" id="dadosfrete">
+              <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
+" class="form-control " readonly>
+
+              <input type="text" name="cep_frete" value="" class="form-control py-3" id="cep_frete" placeholder="Digite o CEP">
+
+              <input type="hidden" name="frete_valor" id="frete_valor" value="0">
+            </div>
+
+            <div class="col-md-4">
+              <button class="btn btn-primary" id="buscar_frete">Calcular</button>
+            </div>
+            
+
+          </div>
+
+        </div>
+        <div class="col-md-7 pl-5">
+          <div class="row justify-content-end">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-12 text-right border-bottom mb-3">
+                  <h3 class="text-black h4 text-uppercase">Total</h3>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-md-6">
+                  <span class="text-black">Total</span>
+                </div>
+                <div class="col-md-6 text-right">
+                  <strong class="text-black">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+</strong>
+                </div>
+              </div>
+
+              <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
+">
+                <div class="row">
+                  <div class="col-md-12 mb-3">
+                    <span id="frete"></span>
+                  </div>
+                  <div class="col-md-12">
+                    <button class="btn btn-black btn-lg py-3 btn-block" type="submit">Confirmar Pedido</button>
+                  </div>
+                  
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><?php }
+}

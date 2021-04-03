@@ -159,7 +159,8 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="widget">
-            <h2>{$TITULO_SITE}</h2> 
+            <h2 class="mb-3">{$TITULO_SITE}</h2>
+            <a href="{$PAG_SITE_ADM}"><input type="submit" class="btn btn-secondary" value="Administrador"></a>
           </div>
         </div>
         <div class="col-lg-2">

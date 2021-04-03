@@ -1,38 +1,30 @@
-  <div class="untree_co-section">
+  <div class="untree_co-section" id="senha-alterar">
     <div class="container">
       
       <div class="row justify-content-center">
         <div class="col-md-6 mb-2 mb-md-0">
-          <h2 class="h3 mb-3 text-black">Login</h2>
+          <h2 class="h3 mb-3 text-black">Alterar senha</h2>
           <div class="p-3 p-lg-5 border">
 
-          <form name="cliente_login" method="post" action="">
+          <form name="alterarsenha" method="post" action="">
             <div class="form-group row">
               <div class="col-md-12">
-                <label class="text-black">Email: </label>
-                <input type="email" class="form-control" name="txt_email" value="" placeholder="Digite seu email" required autocomplete="off">
+                <label class="text-black">Digite sua senha atual: </label>
+                <input type="password" name="cli_senha_atual" id="cli_senha_atual" class="form-control" required>
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col-md-12">
-                <label class="text-black">Senha: <span class="text-danger">*</span></label>
-                <input type="password"  class="form-control " name="txt_senha" value="" placeholder="Digite sua senha" required>
+                <label class="text-black">Digite a nova senha: <span class="text-danger">*</span></label>
+                <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
               </div>
             </div>
 
             <div class="form-group">
-              <button class="btn btn-black btn-lg py-3 btn-block">Entrar</button>
+              <button class="btn btn-black btn-lg py-3 btn-block">Alterar</button>
             </div>
 
-            <div class="form-group">
-                <table class="table site-block-order-table mb-5 d-flex justify-content-center">
-                  <thead>
-                    <th><a href="{$PAG_CADASTRO}"><button class="btn btn-info btn-sm" type="button" id="button-addon2">Novo Cadastro</button></a></th>
-                    <th><a href="{$PAG_RECOVERY}"><button class="btn btn-info btn-sm" type="button" id="button-addon2">Esqueci a Senha</button></a></th>
-                  </thead>
-                </table>
-            </div>
           </form>
 
           </div>

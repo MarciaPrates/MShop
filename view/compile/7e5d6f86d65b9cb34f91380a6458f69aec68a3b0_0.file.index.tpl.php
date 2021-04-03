@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-21 14:28:03
+/* Smarty version 3.1.39, created on 2021-04-03 10:20:53
   from 'C:\xampp\htdocs\MShop\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_605749e3349197_31638092',
+  'unifunc' => 'content_60686bb5e3f717_74400962',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7e5d6f86d65b9cb34f91380a6458f69aec68a3b0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\index.tpl',
-      1 => 1616333274,
+      1 => 1617456048,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_605749e3349197_31638092 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60686bb5e3f717_74400962 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -211,8 +211,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       <div class="row">
         <div class="col-lg-3">
           <div class="widget">
-            <h2><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
-</h2> 
+            <h2 class="mb-3"><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</h2>
+            <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_SITE_ADM']->value;?>
+"><input type="submit" class="btn btn-secondary" value="Administrador"></a>
           </div>
         </div>
         <div class="col-lg-2">

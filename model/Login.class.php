@@ -48,13 +48,14 @@ class Login extends Conexao{
 			
 
 		}else{
-			
+			echo "<script type='text/javascript'>alert('Dados incorretos! Verifique se o email ou a senha estão corretos.');</script>";
 		}
 
 	}
 
 	static function AcessoNegado(){
-		echo '<div class="alert alert-danger"><a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a> Acesso Negado, faça Login</div>';
+		echo "<script type='text/javascript'>alert('Acesso Negado, faça Login!');</script>";
+		Rotas::Redirecionar(1, Rotas::pag_ClienteLogin());
 	}
 
 
@@ -70,9 +71,9 @@ class Login extends Conexao{
 
 	static function Logoff(){
 		unset($_SESSION['CLI']);
-		echo '<h4 class="alert alert-success text-center mt-5 mb-5"> Saindo... </h4>';
-				header("Location: " .Rotas::get_SiteHome());
-					die();
+		echo "<script>alert('Desconectando da sua conta...');</script>";
+			Rotas::Redirecionar(1, Rotas::pag_ClienteLogin());
+			exit();
 	}
 
 

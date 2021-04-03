@@ -49,7 +49,7 @@ if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cl
 
 
      
-     echo "<script>alert('Cadastro Efetuado com sucesso!! A senha foi enviada para seu email cadastrado!'); window.location = 'login';</script>";
+     echo "<script>alert('Cadastro efetuado com sucesso!! A senha foi enviada para seu email cadastrado!'); window.location = 'login';</script>";
 
 }else{
 	$smarty->display('cadastro.tpl');

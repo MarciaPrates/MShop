@@ -118,7 +118,7 @@ class Clientes extends Conexao{
 
 
 
-/*
+
 
     //MÉTODO EDITAR
     function Editar($id){
@@ -133,9 +133,8 @@ class Clientes extends Conexao{
         endif;
           // verifica se o email já esta cadastrado 
           if($this->GetClienteEmail($this->getCli_email()) > 0 && $this->getCli_email() != $_SESSION['CLI']['cli_email']):
-                echo '<div class="alert alert-danger " id="erro_mostrar"> Este Email já esta cadastrado ';
-                Sistema::VoltarPagina();
-                echo '</div>';
+                echo "<script>alert('Este Email já esta cadastrado!');</script>";
+                Rotas::Redirecionar(1, Rotas::pag_CLienteDados());
                 exit();
         endif;
         
@@ -187,7 +186,7 @@ class Clientes extends Conexao{
 
         
     }
-*/
+
 
 
     //BUSCAR SE O CPF DO CLIENTE JÁ EXISTE

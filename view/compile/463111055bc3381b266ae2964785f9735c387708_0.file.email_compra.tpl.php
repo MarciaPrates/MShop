@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-03-21 19:14:26
+/* Smarty version 3.1.39, created on 2021-04-02 17:02:36
   from 'C:\xampp\htdocs\MShop\view\email_compra.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60578d025502d3_87476388',
+  'unifunc' => 'content_6067785c20be21_17090596',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '463111055bc3381b266ae2964785f9735c387708' => 
     array (
       0 => 'C:\\xampp\\htdocs\\MShop\\view\\email_compra.tpl',
-      1 => 1616350395,
+      1 => 1617393304,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60578d025502d3_87476388 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6067785c20be21_17090596 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <style type="text/css">
     img { max-width: 600px; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
     a img { border: none; }
@@ -319,12 +319,8 @@ function content_60578d025502d3_87476388 (Smarty_Internal_Template $_smarty_tpl)
                                   Data do Pedido
                                 </span><br>
 
-                                March 21, 2016 at 11:45AM (MST)<br><br>
-                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
-                                  Número do Pedido
-                                </span><br>
-                                  #123456
-                                <br><br>
+                                <?php echo $_smarty_tpl->tpl_vars['ITENS']->value[1]['ped_data'];?>
+<br>
                               </td>
                             </tr>
                           </table>
@@ -332,6 +328,8 @@ function content_60578d025502d3_87476388 (Smarty_Internal_Template $_smarty_tpl)
                       </tr>
                     </table>
                   </td>
+
+
                   <td class="mini-container-right" valign="top" style="width:278px; padding:10px 14px 10px 15px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
                       <tr>
@@ -342,13 +340,6 @@ function content_60578d025502d3_87476388 (Smarty_Internal_Template $_smarty_tpl)
                                 <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
                                   Data do Pedido
                                 </span><br>
-
-                                March 21, 2016 at 11:45AM (MST)<br><br>
-                                <span class="header-sm" style="color:#4d4d4d; padding: 5px 0; font-size:18px; line-height:1.3;">
-                                  Número do Pedido
-                                </span><br>
-                                  #123456
-                                <br><br>
                               </td>
                             </tr>
                           </table>
@@ -422,35 +413,33 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 
-
-                <tr>
-                  <td class="item-col item" style="text-align: left; border-top: 1px solid #cccccc;"></td>
-                  <td class="item-col quantity" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
+                
+                <tr class="item-col item d-flex flex-column bd-highlight mb-3">
+                  <td class="item-col item item d-flex flex-column bd-highlight mb-3" style="text-align: right; border-top: 1px solid #cccccc;"></td>
+                  <td class="item-col quantity d-flex justify-content-center" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
                     <span class="total-space" style="padding-bottom: 8px; display: inline-block;">Subtotal</span>
                   </td>
-                  <td class="item-col price" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
+                  <td class="item-col price d-flex justify-content-center" valign="top" style="text-align: right; border-top: 1px solid #cccccc; padding-top: 20px;">
                     <span class="total-space">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
 </span>
                   </td>
                 </tr>
 
-                <tr>
-                  <td class="item" style="width: 200px;"></td>
-                  <td class="quantity" valign="top" style="text-align: right;">
+                <tr class="d-flex flex-column bd-highlight mb-3">
+                  <td class="quantity d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="padding-bottom: 8px; display:inline-block;">Frete</span>
                   </td>
-                  <td class="price" valign="top" style="text-align: right;">
+                  <td class="price d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="padding-bottom: 8px; display: inline-block; color:#89A85C;">+R$ <?php echo $_smarty_tpl->tpl_vars['FRETE']->value;?>
 </span>
                   </td>
                 </tr>
 
-                <tr>
-                  <td class="item"></td>
-                  <td class="quantity" valign="top" style="text-align: right;">
+                <tr class="d-flex flex-column bd-highlight mb-3">
+                  <td class="quantity d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="font-weight: bold; color: #4d4d4d; padding-bottom: 8px; display:inline-block;">Total</span>
                   </td>
-                  <td class="price" valign="top" style="text-align: right;">
+                  <td class="price d-flex justify-content-center" valign="top" style="text-align: right;">
                     <span class="total-space" style="font-weight:bold; color: #4d4d4d; padding-bottom: 8px; display:inline-block;">R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL_FRETE']->value;?>
 </span>
                   </td>
